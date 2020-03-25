@@ -1,7 +1,7 @@
-# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+﻿# Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Мария Абрамович](https://up.htmlacademy.ru/adaptive/19/user/992153).
-* Наставник: `Неизвестно`.
+* Наставник: [Настя Хмара](https://htmlacademy.ru/profile/id339763).
 
 ---
 

@@ -30,12 +30,13 @@
         </ul>
       </div>
     </nav>
-    <h2 class="page-header__title">Фотографии пользователей</h2>
+    <h1 class="page-header__title">Фотографии пользователей</h1>
   </header>
 
   <main class="page-photo">
     <p class="page-photo__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-    <section class="page-photo__photo-users photo-users">
+    <section class="photo-users">
+      <h2 class="visually-hidden">Фотографии пользоватеелей</h2>
       <div class="photo-users__wrapper">
         <ul class="photo-users__list">
           <li class="photo-users__item photo-users--panorama-day">
@@ -54,7 +55,7 @@
               <img src="https://via.placeholder.com/150x150" alt="Белая машины в профиль">
             </picture>
             <b class="photo-users__author">Левон</b>
-            <span class="photo-users__time">5 часов назад</span>
+            <span class="photo-users__time">(5 часов назад)</span>
             <p class="photo-users__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <span class="photo-users__like">Нравится: 356</span>
           </li>
@@ -64,7 +65,7 @@
               <img src="https://via.placeholder.com/150x150" alt="Барабанная установка">
             </picture>
             <b class="photo-users__author">Антон</b>
-            <span class="photo-users__time">12 часов назад</span>
+            <span class="photo-users__time">(12 часов назад)</span>
             <p class="photo-users__comment">Соседи будут рады!</p>
             <span class="photo-users__like">Нравится: 666</span>
           </li>
@@ -74,7 +75,7 @@
               <img src="https://via.placeholder.com/150x150" alt="Вид через стеклянный потолок на небо">
             </picture>
             <b class="photo-users__author">Борис</b>
-            <span class="photo-users__time">20 часов назад</span>
+            <span class="photo-users__time">(20 часов назад)</span>
             <p class="photo-users__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <span class="photo-users__like">Нравится: 215</span>
           </li>
@@ -84,7 +85,7 @@
               <img src="https://via.placeholder.com/150x150" alt="Продукты под  тентом Кубанская бахча">
             </picture>
             <b class="photo-users__author">Сергей</b>
-            <span class="photo-users__time">25 часов назад</span>
+            <span class="photo-users__time">(25 часов назад)</span>
             <p class="photo-users__comment">Самая кубанская в мире!</p>
             <span class="photo-users__like">Нравится: 4</span>
           </li>
@@ -94,7 +95,7 @@
               <img src="https://via.placeholder.com/150x150" alt="Ноги сидящего человека на краю склона горы">
             </picture>
             <b class="photo-users__author">Максим</b>
-            <span class="photo-users__time">40 часов назад</span>
+            <span class="photo-users__time">(40 часов назад)</span>
             <p class="photo-users__comment">Где снег-то?</p>
             <span class="photo-users__like">Нравится: 150</span>
           </li>
@@ -104,11 +105,40 @@
               <img src="https://via.placeholder.com/150x150" alt="Вид из илюминатора на крыло летящего самолёта">
             </picture>
             <b class="photo-users__author">Надежда</b>
-            <span class="photo-users__time">45 часов назад</span>
+            <span class="photo-users__time">(45 часов назад)</span>
             <p class="photo-users__comment">Всем GM и взаимные лайки!</p>
             <span class="photo-users__like">Нравится: 2560</span>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="upload">
+      <div class="upload__wrapper">
+        <h2 class="visually-hidden">Запостите ваши фотографии</h2>
+        <p class="upload__text">Затмите их всех! Выкладывайте все, что накопилось на телефоне!</p>
+        <div class="upload_post">
+          <form class="upload__form" method="POST" action="https://echo.htmlacademy.ru">
+            <img class="upload__picture" src="https://via.placeholder.com/150x150">
+            <ul class="upload_settings-list">
+              <li class="upload__settings-item">
+                <img src="https://via.placeholder.com/150x150">
+              </li>
+            </ul>
+            <ul class="upload_settings-list">
+              <li class="upload__settings-item">
+                <img src="https://via.placeholder.com/150x150">
+              </li>
+            </ul>
+            <ul class="upload_settings-list">
+              <li class="upload__settings-item">
+                <img src="https://via.placeholder.com/150x150">
+              </li>
+            </ul>
+            <input class="upload__input" type="range">
+            <button class="upload__submit upload__button" type="submit">Запостить</button>
+            <button class="upload__reset upload__button" type="reset">Отмена</button>
+          </form>
+        </div>
       </div>
     </section>
   </main>

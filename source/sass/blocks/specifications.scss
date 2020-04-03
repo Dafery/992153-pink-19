@@ -3,6 +3,7 @@
   min-height: 700px;
   background-color: hsl(0, 0%, 95%);
   padding-top: 140px;
+
   &::after {
     content: "";
     position: absolute;
@@ -10,8 +11,9 @@
     height: 100px;
     top: 0;
     left: 0;
-    background: url('../../img/bg-triangle-white.svg') no-repeat;
+    background: url("../../img/bg-triangle-white.svg") no-repeat;
   }
+
   &::before {
     content: "";
     position: absolute;
@@ -21,13 +23,15 @@
     right: 50%;
     bottom: 0;
     margin-left: -78px;
-    background: url('../../img/iphone-screen-mobile@1x.png') no-repeat;
+    background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
   }
+
   &__title {
     font-size: 18px;
     line-height: 10px;
     font-weight: 700;
   }
+
   &__description {
     font-size: 14px;
     line-height: 24px;

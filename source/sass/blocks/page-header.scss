@@ -1,0 +1,23 @@
+.page-header {
+  background-color: hsl(213, 41%, 15%);
+}
+
+.page-header__top {
+  position: relative;
+  background: url('../../img/bg-back-mobile@1x.jpg') no-repeat;
+  &--modifier::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 150px;
+    width: 258px;
+    height: 286px;
+    background: url('../../img/iphone-hand-mobile@1x.png') no-repeat;
+  }
+}
+
+.page-header__title {
+  color: hsl(0, 0%, 100%);
+  font-weight: 300;
+  font-size: 24px;
+}

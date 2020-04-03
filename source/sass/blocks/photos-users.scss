@@ -1,0 +1,31 @@
+.photos-users__item {
+  background-color: $background-color-text;
+}
+
+.photos-users__author {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: $color-text;
+}
+
+.photos-users__time {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 300;
+  color: $color-text;
+}
+
+.photos-users__comment {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: $color-text;
+}
+
+.photos-users__like {
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  color: hsl(344, 81%, 48%);
+}

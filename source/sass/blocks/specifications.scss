@@ -23,17 +23,15 @@
     margin-left: -78px;
     background: url('../../img/iphone-screen-mobile@1x.png') no-repeat;
   }
-}
-
-.specifications__title {
-  font-size: 18px;
-  line-height: 10px;
-  font-weight: 700;
-}
-
-.specifications__description {
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400;
-  color: $color-text;
+  &__title {
+    font-size: 18px;
+    line-height: 10px;
+    font-weight: 700;
+  }
+  &__description {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: $color-text;
+  }
 }

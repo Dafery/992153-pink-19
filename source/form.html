@@ -4,37 +4,42 @@
 <head>
   <meta charset="utf-8">
   <title>Фотоприложение «Пинк»</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body class="body">
   <header class="page-header">
-    <a class="page-header__logo" href="index.html">
-      <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотоприложение «Пинк»">
-    </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">Открыть меню</button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a href="index.html">Главная</a>
+    <section class="page-header__top-wrap">
+    <div class="page-header__top">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотоприложение «Пинк»">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <ul class="main-nav__list">
+          <li class="main-nav__item main-nav__item--active">
+            <a class="main-nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="photo.html">Фотографии</a>
           </li>
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="form.html">Конкурс</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Html academy</a>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="#">Html academy</a>
           </li>
         </ul>
-      </div>
-    </nav>
-    <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </nav>
+    </div>
+      <h1 class="page-header__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+    </section>
   </header>
+
   <main class="page-main">
     <h2 class="visually-hidden">Форма для участия в конкурсе</h2>
-    <p class="contest__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
+    <p class="page-main__text">Поделитесь своей историей и получите шанс выиграть ценный приз - 1000 миль на вашу бонусную карту!</p>
     <form class="form" method="post" action="https://echo.htmlacademy.ru">
       <div class="form__participant">
         <label class="form__label" for="surname">Фамилия:</label>
@@ -100,13 +105,14 @@
         <legend class="form__legend">Опишите свои эмоции</legend>
         <textarea id="emotions__text" name="emotions__text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
       </fieldset>
-      <button class="form__submit form__button" type="submit">Отправить форму</button>
+      <button class="form__submit" type="submit">Отправить форму</button>
       <p class="form__required">* - Обязательные поля</p>
     </form>
   </main>
+
   <footer class="footer">
     <a class="footer__logo" href="index.html">
-      <img class="ooter__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотоприложение «Пинк»">
+      <img class="footer__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотоприложение «Пинк»">
     </a>
     <ul class="footer__list">
       <li class="footer__item">
@@ -116,12 +122,12 @@
         <a class="footer__link footer__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
       </li>
       <li class="footer__item">
-        <a class="footer__link footer__link--instagram" href="#" target="_blank">Мы в "Что за социальная сеть?"</a>
+        <a class="footer__link footer__link--youtube" href="#" target="_blank">Мы на YouTube</a>
       </li>
     </ul>
-    <div class="page-footer__copyright copyright">
-      <p class="copyright__text">Разработано
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+    <div class="footer__copyright-info">
+      <p class="footer__copyright-text">Разработано
+        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
       </p>
     </div>
   </footer>

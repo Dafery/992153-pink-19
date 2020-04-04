@@ -1,0 +1,17 @@
+.page-main {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &__title {
+    font-weight: 300;
+    font-size: 24px;
+    color: $color-text;
+  }
+
+  &__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-text;
+  }
+}

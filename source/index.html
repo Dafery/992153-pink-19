@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Фотоприложение «Пинк»</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
 
-  </body>
+<body class="body">
+  <header class="page-header">
+    <section class="page-header__top-wrap page-header__top-wrap--modifier">
+      <div class="page-header__top">
+        <a class="page-header__logo">
+          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотоприложение «Пинк»">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">Открыть меню</button>
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
+              <a class="main-nav__link">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Html academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <h1 class="page-header__title">Взгляните на жизнь иначаче!</h1>
+    </section>
+    <section class="download">
+      <a class="download__button" href="https://apps.apple.com/ru/genre/ios/id36" target="_blank">Скачать приложение</a>
+      <ul class="download__list">
+        <li class="download__item">
+          <a class="download__link" href="https://apps.apple.com/ru/genre/ios/id36" target="_blank">Приложение на iOS</a>
+        </li>
+        <li class="download__item">
+          <a class="download__link" href="https://play.google.com/store/apps?hl=ru" target="_blank">Приложение на Android</a>
+        </li>
+        <li class="download__item">
+          <a class="download__link" href="#" target="_blank">Приложение на ПК</a>
+        </li>
+      </ul>
+      <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+    </section>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Фотоприложение «Пинк» - раскрась свои серые будни</h1>
+    <h2 class="page-main__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h2>
+    <section class="specifications">
+      <ul class="specifications__list">
+        <li class="specifications__item specifications__item--mood">
+          <b class="specifications__title">Поднимает настроение</b>
+          <p class="specifications__description">Приложение позволяет вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="specifications__item specifications__item--world">
+          <b class="specifications__title">Меняет мир вокруг</b>
+          <p class="specifications__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект
+          </p>
+        </li>
+        <li class="specifications__item specifications__item--friends">
+          <b class="specifications__title">Заводит новых друзей</b>
+          <p class="specifications__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <h2 class="visually-hidden">Отзывы о нас</h2>
+      <div class="reviews__list">
+        <div class="reviews__item">
+          <p class="reviews__author-name">Николай Петров</p>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__author-name">Николай Петров</p>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+        <div class="reviews__item">
+          <p class="reviews__author-name">Николай Петров</p>
+          <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+        </div>
+      </div>
+      <div class="reviews__nav">
+        <input class="reviews__input" type="radio" name="reviews" checked>
+        <input class="reviews__input" type="radio" name="reviews">
+        <input class="reviews__input" type="radio" name="reviews">
+      </div>
+    </section>
+    <section class="prices">
+      <h2 class="visually-hidden">Цены</h2>
+      <table class="prices__list">
+        <tr>
+          <th class="prices__cell"></th>
+          <th class="prices__cell prices__cell--hit">Стандарт <span class="prices__span">3,99 USD</span></th>
+          <th class="prices__cell"></th>
+        </tr>
+        <tr>
+          <td class="prices__cell">Разовый фильтр</td>
+          <td class="prices__cell">Разовый фильтр</td>
+          <td class="prices__cell">Разовый фильтр</td>
+        </tr>
+        <tr>
+          <td class="prices__cell">Смайлики</td>
+          <td class="prices__cell">Смайлики</td>
+          <td class="prices__cell">Смайлики</td>
+        </tr>
+        <tr>
+          <td class="prices__cell">Комментарии</td>
+          <td class="prices__cell">Комментарии</td>
+          <td class="prices__cell">Комментарии</td>
+        </tr>
+      </table>
+      <div class="prices__nav">
+        <input class="prices__input" type="radio" name="prices">
+        <input class="prices__input" type="radio" name="prices" checked>
+        <input class="prices__input" type="radio" name="prices">
+      </div>
+    </section>
+    <section class="contacts">
+      <h2 class="visually-hidden">Наши контакты</h2>
+      <p class="contacts__text">Остались вопросы? Свяжитесь с нами!</p>
+      <div class="contacts__list">
+        <div class="contacts__item">
+          <b class="contacts__name">Звоните:</b>
+          <span class="contacts__value">+7 (812) 555-66-66</span>
+        </div>
+        <div class="contacts__item">
+          <b class="contacts__name">Пишите:</b>
+          <span class="contacts__value">mail@htmlacademy.ru</span>
+        </div>
+        <div class="contacts__item">
+          <b class="contacts__name">Приезжайте в гости:</b>
+          <span class="contacts__value">ул. Большая Конюшенная, 19/8</span>
+        </div>
+      </div>
+      <div class="contacts__map">
+      </div>
+    </section>
+  </main>
+
+</body>
+
 </html>

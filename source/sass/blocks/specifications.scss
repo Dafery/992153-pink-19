@@ -1,7 +1,7 @@
 .specifications {
   position: relative;
   min-height: 700px;
-  background-color: hsl(0, 0%, 95%);
+  background-color: $background-color-block;
   padding-top: 140px;
 
   &::after {
@@ -35,7 +35,6 @@
   &__description {
     font-size: 14px;
     line-height: 24px;
-    font-weight: 400;
     color: $color-text;
   }
 }

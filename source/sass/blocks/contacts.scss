@@ -1,3 +1,11 @@
-.contacts {
-  outline: 5px;
+.contacts__name {
+  font-weight: 700;
+  font-size: 18px;
+  color: $color-text;
+}
+
+.contacts__value {
+  font-weight: 300;
+  font-size: 24px;
+  color: hsl(344, 81%, 48%);
 }

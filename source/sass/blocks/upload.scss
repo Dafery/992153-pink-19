@@ -1,3 +1,22 @@
 .upload {
-  outline: 5px;
+  background-color: $background-color-block;
+}
+
+.upload-form__button {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: $background-color-block;
+}
+
+.upload-form__submit {
+  color: hsl(344, 81%, 48%);
+  border: 2px solid hsl(344, 81%, 48%);
+  border-radius: 15px;
+}
+
+.upload-form__reset {
+  color: hsla(211, 42%, 22%, 0.1);
+  border: 2px solid hsla(211, 42%, 22%, 0.1);
+  border-radius: 15px;
 }

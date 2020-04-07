@@ -1,3 +1,69 @@
-.form {
-  outline: 5px;
+.form__label {
+  font-size: 14px;
+  line-height: 30px;
+  color: hsl(344, 81%, 48%);
+}
+
+.form__item-label {
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-text;
+}
+
+.form__legend {
+  font-size: 14px;
+  line-height: 18px;
+  color: hsl(344, 81%, 48%);
+}
+
+.form__fieldset {
+  background-color: $background-color-block;
+}
+
+.form__submit {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: hsl(151, 75%, 62%);
+  color: hsl(0, 0, 100%);
+  border: 2px solid hsl(151, 75%, 62%);
+  border-radius: 2px;
+}
+
+.form__required {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-text;
+}
+
+.form__required-span {
+  color: hsl(344, 81%, 48%);
+}
+
+.form__input::-webkit-input-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-text;
+  opacity: 1;
+}
+
+.form__input::-moz-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-text;
+  opacity: 1;
+}
+
+.form__input:-moz-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-text;
+  opacity: 1;
+}
+
+.form__input:-ms-input-placeholder {
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-text;
+  opacity: 1;
 }

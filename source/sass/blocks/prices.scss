@@ -1,3 +1,24 @@
 .prices {
-  outline: 5px;
+  background-color: $background-color-block;
+}
+
+.prices__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  background-color: $color-text;
+  color: hsl(0, 0, 100%);
+}
+
+.prices__span {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.prices__cell {
+  font-size: 14px;
+  line-height: 30px;
+  background-color: hsl(0, 0, 100%);
+  color: $color-text;
 }

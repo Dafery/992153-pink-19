@@ -1,3 +1,11 @@
-.reviews {
-  outline: 5px;
+.reviews__author-name {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.reviews__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: $color-text;
 }

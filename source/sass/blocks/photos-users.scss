@@ -1,5 +1,5 @@
 .photos-users__item {
-  background-color: $background-color-text;
+  background-color: $background-color-block;
 }
 
 .photos-users__author {
@@ -19,13 +19,11 @@
 .photos-users__comment {
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
   color: $color-text;
 }
 
 .photos-users__like {
   font-size: 12px;
   line-height: 24px;
-  font-weight: 400;
   color: hsl(344, 81%, 48%);
 }

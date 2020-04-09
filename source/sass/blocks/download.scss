@@ -1,18 +1,77 @@
-.download__button,
-.download__text {
-  color: hsl(0, 0%, 100%);
+.download {
+  padding-top: 33px;
+  padding-bottom: 20px;
+
+  &__wrap {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  &__list {
+    display: flex;
+  }
+
+  &__button,
+  &__text {
+    color: hsl(0, 0%, 100%);
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 18px;
+    border: 3px solid hsl(0, 0%, 100%);
+    border-radius: 26px;
+  }
+
+  &__text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
-.download__button {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 18px;
-  border: 3px solid hsl(0, 0%, 100%);
-  border-radius: 26px;
+@media (min-width: $tablet-width) {
+  .download {
+    // position: absolute;
+    // left: 100px;
+    // top: 410px;
+    margin-top: -300px;
+    margin-bottom: 50px;
+    margin-left: -300px;
+
+    // Как поднять выше margin or absolute?
+
+
+    &__list {
+      margin-top: 41px;
+    }
+
+    &__wrap {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    &__text {
+      font-size: 18px;
+      margin-top: 37px;
+    }
+  }
 }
 
-.download__text {
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 24px;
+@media (min-width: $desktop-width) {
+  .download {
+    &__wrap {
+      width: 300px;
+      margin: 0 auto;
+    }
+
+    &__button {
+      font-size: 21px;
+    }
+
+    &__text {
+      font-size: 18px;
+    }
+  }
 }

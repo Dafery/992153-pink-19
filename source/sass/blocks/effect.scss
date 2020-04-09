@@ -1,0 +1,69 @@
+.effect {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .effect {
+    display: block;
+
+    &__wrap {
+      width: 620px;
+      margin: 0 auto;
+      padding-left: 45%;
+      text-align: left;
+    }
+
+    &__title {
+      width: 168px;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 36px;
+      color: hsl(0, 0, 0);
+    }
+
+    &__description {
+      width: 300px;
+      font-size: 14px;
+      line-height: 24px;
+    }
+
+    &__link {
+      font-size: 14px;
+      line-height: 24px;
+      color: hsl(344, 81%, 48%);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .effect {
+    display: block;
+    background-color: $background-color-block;
+
+    &__wrap {
+      width: 940px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    &__title {
+      width: auto;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 30px;
+      color: hsl(0, 0, 0);
+    }
+
+    &__description {
+      width: 521px;
+      font-size: 18px;
+      line-height: 30px;
+    }
+
+    &__link {
+      font-size: 18px;
+      line-height: 30px;
+      color: hsl(344, 81%, 48%);
+    }
+  }
+}

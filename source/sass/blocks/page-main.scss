@@ -1,16 +1,38 @@
 .page-main {
   padding-top: 30px;
   padding-bottom: 30px;
+  text-align: center;
 
   &__title {
     font-weight: 300;
     font-size: 24px;
     color: $color-text;
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 
   &__text {
     font-size: 14px;
     line-height: 30px;
     color: $color-text;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__title {
+    width: 620px;
+    font-size: 40px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__title {
+    width: 820px;
+    font-size: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
   }
 }

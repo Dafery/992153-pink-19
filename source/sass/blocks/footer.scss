@@ -2,12 +2,28 @@
   display: none;
 }
 
+.footer--mobile-modifier {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer__wrap {
+  width: 280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer__list {
+  display: flex;
+}
+
 
 @media (min-width: $tablet-width) {
   .footer {
     display: block;
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 45px;
 
     &__wrap {
       width: 620px;
@@ -31,8 +47,8 @@
 @media (min-width: $desktop-width) {
   .footer {
     display: block;
-    padding-top: 30px;
-    padding-bottom: 40px;
+    padding-top: 80px;
+    padding-bottom: 80px;
 
     &__wrap {
       width: 940px;

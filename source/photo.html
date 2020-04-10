@@ -37,7 +37,7 @@
         </nav>
       </div>
     </section>
-    <div class="page-header__background">
+    <div class="page-header__background page-header__background--modifier">
       <h1 class="page-header__title">Фотографии пользователей</h1>
     </div>
   </header>
@@ -45,97 +45,141 @@
   <main class="page-main">
     <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
     <section class="photos-users">
-      <article class="photos-users__item photos-users__item--panorama-day">
+      <article class="photos-users__item">
         <a href="" class="photos-users__full-picture">
           <picture class="photos-users__picture">
             <source media="(min-width: 768px)" srcset="https://via.placeholder.com/150x150">
-            <img src="https://via.placeholder.com/150x150" alt="Вид с моста">
+            <img class="photos-users__img photos-users__img--panorama-day" src="https://via.placeholder.com/150x150" alt="Вид с моста">
           </picture>
         </a>
-        <b class="photos-users__author">Анна</b>
-        <span class="photos-users__time">(5 минут назад)</span>
-        <p class="photos-users__comment">Прыгать или нет? Напишиет в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-        <a class="photos-users__put-like" href="#">Поставить лайк</a>
-        <span class="photos-users__like">Нравится: 215</span>
+        <div class="photos-users__information photos-users__information--panorama-day">
+          <div class="photos-users__author-time">
+            <b class="photos-users__author">Анна</b>
+            <span class="photos-users__time">(5 минут назад)</span>
+          </div>
+          <p class="photos-users__comment">Прыгать или нет? Напишиет в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <div class="photos-users__likes">
+            <a class="photos-users__put-like" href="#">Поставить лайк</a>
+            <span class="photos-users__like">Нравится: 215</span>
+          </div>
+        </div>
+      </article>
+      <div class="photos-users__wrap">
+      <article class="photos-users__item">
+        <a href="" class="photos-users__full-picture">
+          <picture class="photos-users__picture">
+            <source media="(min-width: 768px)" srcset="https://via.placeholder.com/150x150">
+            <img class="photos-users__img" src="https://via.placeholder.com/150x150" alt="Белая машины в профиль">
+          </picture>
+        </a>
+        <div class="photos-users__information">
+          <div class="photos-users__author-time">
+            <b class="photos-users__author">Левон</b>
+            <span class="photos-users__time">(5 часов назад)</span>
+          </div>
+          <p class="photos-users__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+          <div class="photos-users__likes">
+            <a class="photos-users__put-like" href="#">Поставить лайк</a>
+            <span class="photos-users__like">Нравится: 356</span>
+          </div>
+        </div>
       </article>
       <article class="photos-users__item">
         <a href="" class="photos-users__full-picture">
           <picture class="photos-users__picture">
             <source media="(min-width: 768px)" srcset="https://via.placeholder.com/150x150">
-            <img src="https://via.placeholder.com/150x150" alt="Белая машины в профиль">
+            <img class="photos-users__img" src="https://via.placeholder.com/150x150" alt="Барабанная установка">
           </picture>
         </a>
-        <b class="photos-users__author">Левон</b>
-        <span class="photos-users__time">(5 часов назад)</span>
-        <p class="photos-users__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-        <a class="photos-users__put-like" href="#">Поставить лайк</a>
-        <span class="photos-users__like">Нравится: 356</span>
+        <div class="photos-users__information">
+          <div class="photos-users__author-time">
+            <b class="photos-users__author">Антон</b>
+            <span class="photos-users__time">(12 часов назад)</span>
+          </div>
+          <p class="photos-users__comment">Соседи будут рады!</p>
+          <div class="photos-users__likes">
+            <a class="photos-users__put-like" href="#">Поставить лайк</a>
+            <span class="photos-users__like">Нравится: 666</span>
+          </div>
+        </div>
       </article>
       <article class="photos-users__item">
         <a href="" class="photos-users__full-picture">
           <picture class="photos-users__picture">
             <source media="(min-width: 768px)" srcset="https://via.placeholder.com/150x150">
-            <img src="https://via.placeholder.com/150x150" alt="Барабанная установка">
+            <img class="photos-users__img" src="https://via.placeholder.com/150x150" alt="Вид через стеклянный потолок на небо">
           </picture>
         </a>
-        <b class="photos-users__author">Антон</b>
-        <span class="photos-users__time">(12 часов назад)</span>
-        <p class="photos-users__comment">Соседи будут рады!</p>
-        <a class="photos-users__put-like" href="#">Поставить лайк</a>
-        <span class="photos-users__like">Нравится: 666</span>
+        <div class="photos-users__information">
+          <div class="photos-users__author-time">
+            <b class="photos-users__author">Борис</b>
+            <span class="photos-users__time">(20 часов назад)</span>
+          </div>
+          <p class="photos-users__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+          <div class="photos-users__likes">
+            <a class="photos-users__put-like" href="#">Поставить лайк</a>
+            <span class="photos-users__like">Нравится: 215</span>
+          </div>
+        </div>
       </article>
       <article class="photos-users__item">
         <a href="" class="photos-users__full-picture">
           <picture class="photos-users__picture">
             <source media="(min-width: 768px)" srcset="https://via.placeholder.com/150x150">
-            <img src="https://via.placeholder.com/150x150" alt="Вид через стеклянный потолок на небо">
+            <img class="photos-users__img" src="https://via.placeholder.com/150x150" alt="Продукты под  тентом Кубанская бахча">
           </picture>
         </a>
-        <b class="photos-users__author">Борис</b>
-        <span class="photos-users__time">(20 часов назад)</span>
-        <p class="photos-users__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
-        <a class="photos-users__put-like" href="#">Поставить лайк</a>
-        <span class="photos-users__like">Нравится: 215</span>
+        <div class="photos-users__information">
+          <div class="photos-users__author-time">
+            <b class="photos-users__author">Сергей</b>
+            <span class="photos-users__time">(25 часов назад)</span>
+          </div>
+          <p class="photos-users__comment">Самая кубанская в мире!</p>
+          <div class="photos-users__likes">
+            <a class="photos-users__put-like" href="#">Поставить лайк</a>
+            <span class="photos-users__like">Нравится: 4</span>
+          </div>
+        </div>
       </article>
       <article class="photos-users__item">
         <a href="" class="photos-users__full-picture">
           <picture class="photos-users__picture">
             <source media="(min-width: 768px)" srcset="https://via.placeholder.com/150x150">
-            <img src="https://via.placeholder.com/150x150" alt="Продукты под  тентом Кубанская бахча">
+            <img class="photos-users__img" src="https://via.placeholder.com/150x150" alt="Ноги сидящего человека на краю склона горы">
           </picture>
         </a>
-        <b class="photos-users__author">Сергей</b>
-        <span class="photos-users__time">(25 часов назад)</span>
-        <p class="photos-users__comment">Самая кубанская в мире!</p>
-        <a class="photos-users__put-like" href="#">Поставить лайк</a>
-        <span class="photos-users__like">Нравится: 4</span>
+        <div class="photos-users__information">
+          <div class="photos-users__author-time">
+            <b class="photos-users__author">Максим</b>
+            <span class="photos-users__time">(40 часов назад)</span>
+          </div>
+          <p class="photos-users__comment">Где снег-то?</p>
+          <div class="photos-users__likes">
+            <a class="photos-users__put-like" href="#">Поставить лайк</a>
+            <span class="photos-users__like">Нравится: 150</span>
+          </div>
+        </div>
       </article>
       <article class="photos-users__item">
         <a href="" class="photos-users__full-picture">
           <picture class="photos-users__picture">
             <source media="(min-width: 768px)" srcset="https://via.placeholder.com/150x150">
-            <img src="https://via.placeholder.com/150x150" alt="Ноги сидящего человека на краю склона горы">
+            <img class="photos-users__img" src="https://via.placeholder.com/150x150" alt="Вид из илюминатора на крыло летящего самолёта">
           </picture>
         </a>
-        <b class="photos-users__author">Максим</b>
-        <span class="photos-users__time">(40 часов назад)</span>
-        <p class="photos-users__comment">Где снег-то?</p>
-        <a class="photos-users__put-like" href="#">Поставить лайк</a>
-        <span class="photos-users__like">Нравится: 150</span>
+        <div class="photos-users__information">
+          <div class="photos-users__author-time">
+            <b class="photos-users__author">Надежда</b>
+            <span class="photos-users__time">(45 часов назад)</span>
+          </div>
+          <p class="photos-users__comment">Всем GM и взаимные лайки!</p>
+          <div class="photos-users__likes">
+            <a class="photos-users__put-like" href="#">Поставить лайк</a>
+            <span class="photos-users__like">Нравится: 2560</span>
+          </div>
+        </div>
       </article>
-      <article class="photos-users__item">
-        <a href="" class="photos-users__full-picture">
-          <picture class="photos-users__picture">
-            <source media="(min-width: 768px)" srcset="https://via.placeholder.com/150x150">
-            <img src="https://via.placeholder.com/150x150" alt="Вид из илюминатора на крыло летящего самолёта">
-          </picture>
-        </a>
-        <b class="photos-users__author">Надежда</b>
-        <span class="photos-users__time">(45 часов назад)</span>
-        <p class="photos-users__comment">Всем GM и взаимные лайки!</p>
-        <a class="photos-users__put-like" href="#">Поставить лайк</a>
-        <span class="photos-users__like">Нравится: 2560</span>
-      </article>
+    </div>
     </section>
     <h2 class="visually-hidden">Запостите ваши фотографии</h2>
     <p class="page-main__text">Затмите их всех! Выкладывайте все, что накопилось на телефоне!</p>
@@ -160,25 +204,27 @@
     </section>
   </main>
 
-  <footer class="footer">
-    <a class="footer__logo" href="index.html">
-      <img class="footer__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотоприложение «Пинк»">
-    </a>
-    <ul class="footer__list">
-      <li class="footer__item">
-        <a class="footer__link footer__link--twitter" href="#" target="_blank">Мы в Твиттере</a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link footer__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
-      </li>
-      <li class="footer__item">
-        <a class="footer__link footer__link--youtube" href="#" target="_blank">Мы на YouTube</a>
-      </li>
-    </ul>
-    <div class="footer__copyright-info">
-      <p class="footer__copyright-text">Разработано
-        <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-      </p>
+  <footer class="footer footer--mobile-modifier">
+    <div class="footer__wrap">
+      <a class="footer__logo" href="index.html">
+        <img class="footer__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотоприложение «Пинк»">
+      </a>
+      <ul class="footer__list">
+        <li class="footer__item">
+          <a class="footer__link footer__link--twitter" href="#" target="_blank">Мы в Твиттере</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link footer__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link footer__link--youtube" href="#" target="_blank">Мы на YouTube</a>
+        </li>
+      </ul>
+      <div class="footer__copyright-info">
+        <p class="footer__copyright-text">Разработано
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+        </p>
+      </div>
     </div>
   </footer>
 </body>

@@ -38,8 +38,7 @@
     // top: 410px;
     margin-top: -300px;
     margin-bottom: 50px;
-    margin-left: -300px;
-
+    margin-left: -320px;
     // Как поднять выше margin or absolute?
 
 
@@ -61,6 +60,14 @@
 
 @media (min-width: $desktop-width) {
   .download {
+    // position: absolute;
+    // left: 100px;
+    // top: 410px;
+    margin-top: -300px;
+    margin-bottom: 50px;
+    margin-left: -640px;
+    // Как поднять выше margin or absolute?
+
     &__wrap {
       width: 300px;
       margin: 0 auto;

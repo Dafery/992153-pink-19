@@ -3,92 +3,67 @@
   background-color: $background-color-block;
   padding-top: 20px;
   padding-bottom: 20px;
-
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   width: 320px;
-  //   height: 100px;
-  //   top: 0;
-  //   left: 0;
-  //   background: url("../../img/bg-triangle-white.svg") no-repeat;
-  // }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 157px;
-  //   height: 280px;
-  //   left: 50%;
-  //   right: 50%;
-  //   bottom: 0;
-  //   margin-left: -78px;
-  //   background: url("../../img/iphone-screen-mobile@1x.png") no-repeat;
-  // }
-
-  &__title {
-    font-size: 18px;
-    line-height: 10px;
-    font-weight: 400;
-  }
-
-  &__description {
-    font-size: 14px;
-    line-height: 24px;
-    color: $color-text;
-  }
-
-  &__wrap {
-    width: 280px;
-    margin: 0 auto;
-  }
 }
 
-@media (min-width: $tablet-width) {
-  .specifications {
-    &__wrap {
-      display: flex;
-      justify-content: flex-end;
-      width: 620px;
-      margin: 0 auto;
-    }
+.specifications__title {
+  font-size: 18px;
+  line-height: 10px;
+  font-weight: 400;
+}
 
-    &__list {
-      width: 310px;
-      text-align: left;
-    }
+.specifications__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: $color-text;
+}
+
+.specifications__wrap {
+  width: 280px;
+  margin: 0 auto;
+}
+
+
+@media (min-width: $tablet-width) {
+  .specifications__wrap {
+    display: flex;
+    justify-content: flex-end;
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .specifications__list {
+    width: 310px;
+    text-align: left;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .specifications {
-    &__wrap {
-      width: 940px;
-      margin: 0 auto;
-      padding-left: 0;
-    }
+  .specifications__wrap {
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 0;
+  }
 
-    &__list {
-      display: flex;
-      justify-content: space-between;
-      width: 940px;
-      text-align: center;
-    }
+  .specifications__list {
+    display: flex;
+    justify-content: space-between;
+    width: 940px;
+    text-align: center;
+  }
 
-    &__item {
-      width: 248px;
-    }
+  .specifications__item {
+    width: 248px;
+  }
 
-    &__title {
-      width: 240px;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 30px;
-    }
+  .specifications__title {
+    width: 240px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+  }
 
-    &__description {
-      font-size: 18px;
-      line-height: 30px;
-    }
+  .specifications__description {
+    font-size: 18px;
+    line-height: 30px;
   }
 }

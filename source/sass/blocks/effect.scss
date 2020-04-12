@@ -7,39 +7,39 @@
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
 
-    &__wrap {
-      display: flex;
-      justify-content: flex-end;
-      width: 620px;
-      margin: 0 auto;
-    }
+  .effect__wrap {
+    display: flex;
+    justify-content: flex-end;
+    width: 620px;
+    margin: 0 auto;
+  }
 
-    &__text-block {
-      width: 300px;
-      text-align: left;
-    }
+  .effect__text-block {
+    width: 300px;
+    text-align: left;
+  }
 
-    &__title {
-      width: 168px;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 36px;
-      color: hsl(0, 0, 0);
-      margin: 0;
-    }
+  .effect__title {
+    width: 168px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: hsl(0, 0, 0);
+    margin: 0;
+  }
 
-    &__description {
-      font-size: 14px;
-      line-height: 24px;
-      margin: 0;
-    }
+  .effect__description {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 0;
+  }
 
-    &__link {
-      font-size: 14px;
-      line-height: 24px;
-      color: hsl(344, 81%, 48%);
-    }
+  .effect__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: hsl(344, 81%, 48%);
   }
 }
 
@@ -49,38 +49,38 @@
     background-color: $background-color-block;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
 
-    &__wrap {
-      display: flex;
-      justify-content: flex-end;
-      width: 940px;
-      margin: 0 auto;
-    }
+  .effect__wrap {
+    display: flex;
+    justify-content: flex-end;
+    width: 940px;
+    margin: 0 auto;
+  }
 
-    &__text-block {
-      width: 522px;
-      text-align: left;
-    }
+  .effect__text-block {
+    width: 522px;
+    text-align: left;
+  }
 
-    &__title {
-      width: auto;
-      font-weight: 700;
-      font-size: 30px;
-      line-height: 30px;
-      color: hsl(0, 0, 0);
-      margin: 0;
-    }
+  .effect__title {
+    width: auto;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    color: hsl(0, 0, 0);
+    margin: 0;
+  }
 
-    &__description {
-      font-size: 18px;
-      line-height: 30px;
-      margin: 0;
-    }
+  .effect__description {
+    font-size: 18px;
+    line-height: 30px;
+    margin: 0;
+  }
 
-    &__link {
-      font-size: 18px;
-      line-height: 30px;
-      color: hsl(344, 81%, 48%);
-    }
+  .effect__link {
+    font-size: 18px;
+    line-height: 30px;
+    color: hsl(344, 81%, 48%);
   }
 }

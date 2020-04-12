@@ -40,28 +40,7 @@
   color: hsl(344, 81%, 48%);
 }
 
-.form__input::-webkit-input-placeholder {
-  font-size: 18px;
-  line-height: 30px;
-  color: $color-text;
-  opacity: 1;
-}
-
-.form__input::-moz-placeholder {
-  font-size: 18px;
-  line-height: 30px;
-  color: $color-text;
-  opacity: 1;
-}
-
-.form__input:-moz-placeholder {
-  font-size: 18px;
-  line-height: 30px;
-  color: $color-text;
-  opacity: 1;
-}
-
-.form__input:-ms-input-placeholder {
+.form__input::placeholder {
   font-size: 18px;
   line-height: 30px;
   color: $color-text;

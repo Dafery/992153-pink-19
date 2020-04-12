@@ -1,3 +1,17 @@
+.download {
+  padding-top: 33px;
+  padding-bottom: 20px;
+}
+
+.download__wrap {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.download__list {
+  display: flex;
+}
+
 .download__button,
 .download__text {
   color: hsl(0, 0%, 100%);
@@ -15,4 +29,48 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 24px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .download {
+    margin-top: -300px;
+    margin-bottom: 50px;
+    margin-left: -320px;
+  }
+
+  .download__list {
+    margin-top: 41px;
+  }
+
+  .download__wrap {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .download__text {
+    font-size: 18px;
+    margin-top: 37px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    margin-top: -300px;
+    margin-bottom: 50px;
+    margin-left: -640px;
+  }
+
+  .download__wrap {
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .download__button {
+    font-size: 21px;
+  }
+
+  .download__text {
+    font-size: 18px;
+  }
 }

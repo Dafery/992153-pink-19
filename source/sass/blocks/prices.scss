@@ -1,9 +1,9 @@
 .prices {
   background-color: $background-color-block;
-  margin: 0 auto;
 }
 
 .prices__title {
+  width: 280px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
@@ -18,8 +18,14 @@
 }
 
 .prices__cell {
+  width: 280px;
   font-size: 14px;
   line-height: 30px;
   background-color: hsl(0, 0, 100%);
   color: $color-text;
+}
+
+.prices__list {
+  // width: 840px;
+  margin: 0 auto;
 }

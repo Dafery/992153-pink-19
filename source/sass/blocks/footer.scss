@@ -1,11 +1,11 @@
 .footer {
   display: none;
+}
 
-  &__mobile-modifier {
-    display: block;
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+.footer__mobile--modifier {
+  display: block;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .footer__wrap {
@@ -16,6 +16,14 @@
 
 .footer__list {
   display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: $tablet-width) {

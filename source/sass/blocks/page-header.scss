@@ -6,7 +6,7 @@
 }
 
 .page-header {
-  background-color: hsl(213, 41%, 15%);
+  background-color: #1d2631;
   text-align: center;
 
   &__background--modifier {
@@ -27,7 +27,7 @@
 
 .page-header__title {
   width: 280px;
-  color: hsl(0, 0%, 100%);
+  color: #ffffff;
   font-weight: 300;
   font-size: 24px;
   margin: 0 auto;
@@ -71,7 +71,7 @@
   }
 
   .page-header {
-    background-color: hsl(213, 41%, 15%);
+    background-color: #1d2631;
 
     &__title--modifier {
       width: 200px;
@@ -113,7 +113,7 @@
   }
 
   .page-header {
-    background-color: hsl(213, 41%, 15%);
+    background-color: #1d2631;
 
     &__background--modifier {
       min-height: 395px;

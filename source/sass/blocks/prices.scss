@@ -19,8 +19,8 @@
   font-size: 18px;
   line-height: 30px;
   background-color: $color-text;
-  border-right: 2px solid hsl(0, 0, 91%);
-  color: hsl(0, 0, 100%);
+  border-right: 2px solid #e5e5e5;
+  color: #ffffff;
   text-transform: uppercase;
 }
 
@@ -34,12 +34,12 @@
   height: 56px;
   font-size: 14px;
   line-height: 30px;
-  background-color: hsl(0, 0, 100%);
+  background-color: #ffffff;
   color: $color-text;
   text-align: left;
   text-transform: uppercase;
   padding-left: 22px;
-  border: 2px solid hsl(0, 0, 91%);
+  border: 2px solid #e5e5e5;
 }
 
 .prices__nav {
@@ -55,6 +55,7 @@
   border-top: none;
   border-right: none;
   border-left: none;
+  background-color: transparent;
 }
 
 .prices__title:nth-of-type(1) {
@@ -96,6 +97,10 @@
   }
 
   .prices__nav {
+    display: none;
+  }
+
+  .prices__cell-span {
     display: none;
   }
 }

@@ -101,6 +101,13 @@
   .page-header__title {
     width: 750px;
     font-size: 50px;
+
+    &--modifier {
+      width: 240px;
+      line-height: 60px;
+      margin-top: 219px;
+      margin-left: 193px;
+    }
   }
 
   .page-header__wrap-menu {
@@ -117,12 +124,6 @@
 
     &__background--modifier {
       min-height: 395px;
-    }
-
-    &__title--modifier {
-      width: 240px;
-      font-size: 40px;
-      margin-top: 230px;
     }
   }
 }

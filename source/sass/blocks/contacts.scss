@@ -11,6 +11,11 @@
   color: #d22856;
 }
 
+.contacts__value-mail:hover {
+  color: $color-text;
+  text-decoration: underline;
+}
+
 .contacts__item {
   display: flex;
   flex-direction: column;

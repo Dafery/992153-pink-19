@@ -16,11 +16,30 @@
   color: #d22856;
   border: 3px solid #d22856;
   margin-bottom: 12px;
+
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: hsla(0, 0, 100%, 0.3);
+  }
 }
 
 .upload-form__reset {
-  color: hsla(211, 42%, 22%, 0.1);
-  border: 3px solid hsla(211, 42%, 22%, 0.1);
+  color: $color-text;
+  border: 3px solid $color-text;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $color-text;
+    color: hsla(0, 0, 100%, 0.3);
+  }
 }
 
 .upload-form {

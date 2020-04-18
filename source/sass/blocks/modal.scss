@@ -41,6 +41,18 @@
   border-radius: 2px;
   margin: 0 auto;
   margin-bottom: 35px;
+
+  &:hover {
+    background-color: #1c9b5e;
+  }
+
+  &:active {
+    color: hsla(0, 0, 100%, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
 }
 
 .modal__btn-close {

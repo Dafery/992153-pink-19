@@ -9,3 +9,64 @@
   line-height: 30px;
   color: $color-text;
 }
+
+.reviews__wrap {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.reviews__author-info {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .reviews__author-info {
+    display: block;
+    font-size: 14px;
+    line-height: 30px;
+    color: $color-text;
+    margin: 0;
+  }
+
+  .reviews__wrap {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .reviews__author-name {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+
+  .reviews__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .reviews__author-info {
+    display: block;
+    font-size: 18px;
+  }
+
+  .reviews__wrap {
+    width: 780px;
+    margin: 0 auto;
+  }
+
+  .reviews__author-name {
+    font-size: 24px;
+  }
+
+  .reviews__item {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

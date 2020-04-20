@@ -2,10 +2,11 @@
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
   background-size: auto 462px;
   min-height: 462px;
+  border-top: 1px solid hsla(0, 0, 0, 0);
 }
 
 .page-header {
-  background-color: hsl(213, 41%, 15%);
+  background-color: #1d2631;
   text-align: center;
 
   &__background--modifier {
@@ -26,11 +27,11 @@
 
 .page-header__title {
   width: 280px;
-  color: hsl(0, 0%, 100%);
+  color: #ffffff;
   font-weight: 300;
   font-size: 24px;
   margin: 0 auto;
-  padding-top: 50px;
+  margin-top: 95px;
 }
 
 .page-header__logo-image {
@@ -70,11 +71,12 @@
   }
 
   .page-header {
-    background-color: hsl(213, 41%, 15%);
+    background-color: #1d2631;
 
     &__title--modifier {
       width: 200px;
       font-size: 40px;
+      margin-top: 212px;
     }
 
     &__background--modifier {
@@ -91,6 +93,7 @@
   }
 
   .page-header__menu {
+    position: absolute;
     flex-direction: row;
     width: 100%;
   }
@@ -98,10 +101,17 @@
   .page-header__title {
     width: 750px;
     font-size: 50px;
+
+    &--modifier {
+      width: 240px;
+      line-height: 60px;
+      margin-top: 219px;
+      margin-left: 193px;
+    }
   }
 
   .page-header__wrap-menu {
-    width: 940px;
+    width: 150px;
     margin: 0 auto;
   }
 
@@ -110,15 +120,10 @@
   }
 
   .page-header {
-    background-color: hsl(213, 41%, 15%);
+    background-color: #1d2631;
 
     &__background--modifier {
       min-height: 395px;
-    }
-
-    &__title--modifier {
-      width: 240px;
-      font-size: 40px;
     }
   }
 }

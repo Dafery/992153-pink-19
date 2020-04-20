@@ -1,14 +1,27 @@
 .prices {
   background-color: $background-color-block;
-  margin: 0 auto;
+  overflow-x: hidden;
+}
+
+.prices__list {
+  border-collapse: collapse;
+
+  table-layout: fixed;
+
+  width: calc(280% - 320px);
+  margin-left: calc(-100% + 58px);
 }
 
 .prices__title {
+  width: 278px;
+  height: 96px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   background-color: $color-text;
-  color: hsl(0, 0, 100%);
+  border-right: 2px solid #e5e5e5;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .prices__span {
@@ -18,8 +31,103 @@
 }
 
 .prices__cell {
+  height: 56px;
   font-size: 14px;
   line-height: 30px;
-  background-color: hsl(0, 0, 100%);
+  background-color: #ffffff;
   color: $color-text;
+  text-align: left;
+  text-transform: uppercase;
+  padding-left: 22px;
+  border: 2px solid #e5e5e5;
+}
+
+.prices__nav {
+  padding-top: 40px;
+  padding-bottom: 47px;
+}
+
+.prices__row:nth-child(2) .prices__cell {
+  border-top: none;
+}
+
+.prices__row:nth-child(1) .prices__cell:nth-child(1) {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  background-color: transparent;
+}
+
+.prices__title:nth-of-type(1) {
+  border-radius: 2px 0 0 2px;
+}
+
+.prices__title:nth-last-child(1) {
+  border-right: none;
+}
+
+@media (min-width: $tablet-width) {
+  .prices__list {
+    width: 620px;
+    margin: 0 auto;
+  }
+
+  .prices__title {
+    width: auto;
+    height: 77px;
+    font-size: 16px;
+  }
+
+  .prices__span {
+    font-size: 18px;
+  }
+
+  .prices__row:nth-child(1) .prices__cell:nth-child(1) {
+    background-color: transparent;
+  }
+
+  .prices__cell {
+    text-transform: none;
+    padding-left: 15px;
+    height: 42px;
+  }
+
+  .prices {
+    padding-bottom: 68px;
+  }
+
+  .prices__nav {
+    display: none;
+  }
+
+  .prices__cell-span {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .prices__title {
+    height: 96px;
+    font-size: 18px;
+  }
+
+  .prices__span {
+    font-size: 24px;
+  }
+
+  .prices__cell {
+    font-size: 18px;
+    text-transform: none;
+    padding-left: 24px;
+    height: 58px;
+  }
+
+  .prices__list {
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .prices {
+    padding-bottom: 95px;
+  }
 }

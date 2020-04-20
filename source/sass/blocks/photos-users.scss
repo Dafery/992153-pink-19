@@ -26,7 +26,7 @@
 .photos-users__like {
   font-size: 12px;
   line-height: 24px;
-  color: hsl(344, 81%, 48%);
+  color: #d22856;
 }
 
 .photos-users__likes {
@@ -170,6 +170,7 @@
 
   .photos-users__img--panorama-day {
     height: 505px;
-    min-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
   }
 }

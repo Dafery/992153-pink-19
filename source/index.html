@@ -14,7 +14,7 @@
     <section class="page-header__wrap page-header__top-wrap--modifier">
       <div class="page-header__menu">
         <div class="page-header__wrap-menu">
-          <a class="page-header__logo">
+          <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотоприложение «Пинк»">
           </a>
           <button class="page-header__toggle" type="button">Открыть меню</button>
@@ -22,7 +22,7 @@
         <nav class="main-nav">
           <ul class="main-nav__list">
             <li class="main-nav__item main-nav__item--active">
-              <a class="main-nav__link">Главная</a>
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="photo.html">Фотографии</a>
@@ -31,7 +31,7 @@
               <a class="main-nav__link" href="form.html">Конкурс</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="#">Html academy</a>
+              <a class="main-nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
             </li>
           </ul>
         </nav>
@@ -57,11 +57,10 @@
         <p class="download__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </div>
     </section>
-  </div>
   </header>
 
   <main class="page-main">
-    <h2 class="page-main__title">Устали от серости мегаполиса?<br> Нам есть, что вам <br> предложить!</h2>
+    <h2 class="page-main__title">Устали от серости мегаполиса?<br><br class="page-main__title-br"> Нам есть, что вам <br> предложить!</h2>
     <section class="specifications">
       <div class="specifications__wrap">
         <ul class="specifications__list">
@@ -95,15 +94,10 @@
       <div class="reviews__wrap">
         <div class="reviews__list">
           <div class="reviews__item">
-            <p class="reviews__author-name">Николай Петров</p>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__author-name">Николай Петров</p>
-            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-          </div>
-          <div class="reviews__item">
-            <p class="reviews__author-name">Николай Петров</p>
+            <div class="reviews__author">
+              <p class="reviews__author-name">Николай Петров</p>
+              <p class="reviews__author-info">25 лет, водитель трамвая</p>
+            </div>
             <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </div>
         </div>
@@ -117,25 +111,29 @@
     <section class="prices">
       <h2 class="visually-hidden">Цены</h2>
       <table class="prices__list">
-        <tr>
-          <th class="prices__title"></th>
-          <th class="prices__title prices__title--hit">Стандарт <span class="prices__span">3,99 USD</span></th>
-          <th class="prices__title"></th>
+        <tr class="prices__row">
+          <td class="prices__cell"></td>
+          <th class="prices__title">База <br><span class="prices__span">1,99 USD</span></th>
+          <th class="prices__title prices__title--hit">Стандарт <br><span class="prices__span">3,99 USD</span></th>
+          <th class="prices__title">Анлим <br><span class="prices__span">9,99 USD</span></th>
         </tr>
-        <tr>
-          <td class="prices__cell">Разовый фильтр</td>
-          <td class="prices__cell">Разовый фильтр</td>
-          <td class="prices__cell">Разовый фильтр</td>
+        <tr class="prices__row">
+          <td class="prices__cell">Розовый фильтр</td>
+          <td class="prices__cell"><span class="prices__cell-span">Розовый фильтр</span></td>
+          <td class="prices__cell"><span class="prices__cell-span">Розовый фильтр</span></td>
+          <td class="prices__cell"><span class="prices__cell-span">Розовый фильтр</span></td>
         </tr>
-        <tr>
+        <tr class="prices__row">
           <td class="prices__cell">Смайлики</td>
-          <td class="prices__cell">Смайлики</td>
-          <td class="prices__cell">Смайлики</td>
+          <td class="prices__cell"><span class="prices__cell-span">Смайлики</span></td>
+          <td class="prices__cell"><span class="prices__cell-span">Смайлики</span></td>
+          <td class="prices__cell"><span class="prices__cell-span">Смайлики</span></td>
         </tr>
-        <tr>
+        <tr class="prices__row">
           <td class="prices__cell">Комментарии</td>
-          <td class="prices__cell">Комментарии</td>
-          <td class="prices__cell">Комментарии</td>
+          <td class="prices__cell"><span class="prices__cell-span">Комментарии</span></td>
+          <td class="prices__cell"><span class="prices__cell-span">Комментарии</span></td>
+          <td class="prices__cell"><span class="prices__cell-span">Комментарии</span></td>
         </tr>
       </table>
       <div class="prices__nav">
@@ -145,7 +143,7 @@
       </div>
     </section>
     <section class="contacts">
-      <h2 class="page-main__title">Остались вопросы? Свяжитесь с нами!</h2>
+      <h2 class="page-main__title page-main__title--modifier">Остались вопросы? Свяжитесь с нами!</h2>
       <div class="contacts__list">
         <div class="contacts__item">
           <b class="contacts__name">Звоните:</b>
@@ -153,11 +151,11 @@
         </div>
         <div class="contacts__item">
           <b class="contacts__name">Пишите:</b>
-          <span class="contacts__value">mail@htmlacademy.ru</span>
+          <a class="contacts__value contacts__value-mail">mail@htmlacademy.ru</a>
         </div>
         <div class="contacts__item">
           <b class="contacts__name">Приезжайте в гости:</b>
-          <span class="contacts__value">ул. Большая Конюшенная, 19/8</span>
+          <span class="contacts__value">ул. Большая <br> Конюшенная, 19/8</span>
         </div>
       </div>
       <div class="contacts__map">

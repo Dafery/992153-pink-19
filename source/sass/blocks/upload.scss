@@ -3,20 +3,184 @@
 }
 
 .upload-form__button {
+  width: 280px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   background-color: $background-color-block;
+  height: 49px;
+  border-radius: 25px;
 }
 
 .upload-form__submit {
-  color: hsl(344, 81%, 48%);
-  border: 2px solid hsl(344, 81%, 48%);
-  border-radius: 15px;
+  color: #d22856;
+  border: 3px solid #d22856;
+  margin-bottom: 12px;
+
+  &:hover {
+    background-color: #d22856;
+    color: #ffffff;
+  }
+
+  &:active {
+    color: hsla(0, 0, 100%, 0.3);
+  }
 }
 
 .upload-form__reset {
-  color: hsla(211, 42%, 22%, 0.1);
-  border: 2px solid hsla(211, 42%, 22%, 0.1);
-  border-radius: 15px;
+  color: $color-text;
+  border: 3px solid $color-text;
+  opacity: 0.1;
+
+  &:hover {
+    opacity: 0.3;
+  }
+
+  &:active {
+    background-color: $color-text;
+    color: hsla(0, 0, 100%, 0.3);
+  }
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 19px;
+  padding-bottom: 43px;
+}
+
+.upload-form__settings-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.upload-form__input {
+  display: none;
+  width: 240px;
+  margin: 0 auto;
+  margin-bottom: 25px;
+}
+
+.upload-form__input:nth-of-type(1) {
+  display: block;
+}
+
+.upload-form__picture {
+  width: 280px;
+}
+
+@media (min-width: $tablet-width) {
+  .upload-form__input {
+    display: block;
+    width: 200px;
+    margin-bottom: 34px;
+  }
+
+  .upload-form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 620px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+  }
+
+  .upload-form__picture {
+    width: 300px;
+    height: 400px;
+  }
+
+  .upload-form__wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    height: 400px;
+  }
+
+  .upload-form__button {
+    width: 260px;
+    height: 55px;
+    border-radius: 30px;
+    margin: 0 auto;
+  }
+
+  .upload-form__settings-list {
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
+    margin-right: 25px;
+    margin-bottom: 25px;
+    margin-left: 28px;
+    min-height: 165px;
+  }
+
+  .upload-form__settings-button {
+    width: 18px;
+    height: 21px;
+  }
+
+  .upload-form__button-wrap {
+    margin-top: 86px;
+  }
+
+  .upload-form__submit {
+    margin-bottom: 24px;
+  }
+
+  .upload-form__input-wrap {
+    margin: 0;
+    height: 157px;
+    padding-top: 8px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .upload-form {
+    width: 800px;
+    padding-top: 55px;
+    padding-bottom: 55px;
+    padding-right: 60px;
+    padding-left: 80px;
+  }
+
+  .upload-form__wrap {
+    width: 410px;
+  }
+
+  .upload-form__settings-button {
+    width: 44px;
+    height: 44px;
+  }
+
+  .upload-form__settings-list {
+    margin-top: -5px;
+    margin-right: 40px;
+    margin-left: 0;
+  }
+
+  .upload-form__input {
+    display: block;
+    width: 288px;
+    margin-bottom: 36px;
+  }
+
+  .upload-form__button {
+    width: 183px;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  .upload-form__button-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 410px;
+    margin-top: 160px;
+  }
 }

@@ -14,10 +14,10 @@
     <section class="page-header__wrap page-header__top-wrap--modifier">
       <div class="page-header__menu">
         <div class="page-header__wrap-menu">
-          <a class="page-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотоприложение «Пинк»">
+          <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="76" height="22" alt="Фотоприложение «Пинк»">
           </a>
-          <button class="page-header__toggle" type="button">Открыть меню</button>
+          <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         </div>
         <nav class="main-nav">
           <ul class="main-nav__list">
@@ -38,12 +38,12 @@
       </div>
     </section>
     <div class="page-header__background page-header__background--modifier">
-      <h1 class="page-header__title">Фотографии пользователей</h1>
+      <h1 class="page-header__title page-header__title--modifier">Фотографии пользователей</h1>
     </div>
   </header>
 
   <main class="page-main">
-    <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+    <p class="page-main__text">Взгляните на фотографии, которые выкладывают пользователи! <br> Видите, как не хватает ваших?</p>
     <section class="photos-users">
       <article class="photos-users__item">
         <a href="" class="photos-users__full-picture">
@@ -57,9 +57,9 @@
             <b class="photos-users__author">Анна</b>
             <span class="photos-users__time">(5 минут назад)</span>
           </div>
-          <p class="photos-users__comment">Прыгать или нет? Напишиет в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+          <p class="photos-users__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
           <div class="photos-users__likes">
-            <a class="photos-users__put-like" href="#">Поставить лайк</a>
+            <a class="photos-users__put-like" href="#"><span class="visually-hidden">Поставить лайк</span></a>
             <span class="photos-users__like">Нравится: 215</span>
           </div>
         </div>
@@ -79,7 +79,7 @@
             </div>
             <p class="photos-users__comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
             <div class="photos-users__likes">
-              <a class="photos-users__put-like" href="#">Поставить лайк</a>
+              <a class="photos-users__put-like" href="#"><span class="visually-hidden">Поставить лайк</span></a>
               <span class="photos-users__like">Нравится: 356</span>
             </div>
           </div>
@@ -98,7 +98,7 @@
             </div>
             <p class="photos-users__comment">Соседи будут рады!</p>
             <div class="photos-users__likes">
-              <a class="photos-users__put-like" href="#">Поставить лайк</a>
+              <a class="photos-users__put-like" href="#"><span class="visually-hidden">Поставить лайк</span></a>
               <span class="photos-users__like">Нравится: 666</span>
             </div>
           </div>
@@ -117,7 +117,7 @@
             </div>
             <p class="photos-users__comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
             <div class="photos-users__likes">
-              <a class="photos-users__put-like" href="#">Поставить лайк</a>
+              <a class="photos-users__put-like" href="#"><span class="visually-hidden">Поставить лайк</span></a>
               <span class="photos-users__like">Нравится: 215</span>
             </div>
           </div>
@@ -136,7 +136,7 @@
             </div>
             <p class="photos-users__comment">Самая кубанская в мире!</p>
             <div class="photos-users__likes">
-              <a class="photos-users__put-like" href="#">Поставить лайк</a>
+              <a class="photos-users__put-like" href="#"><span class="visually-hidden">Поставить лайк</span></a>
               <span class="photos-users__like">Нравится: 4</span>
             </div>
           </div>
@@ -155,7 +155,7 @@
             </div>
             <p class="photos-users__comment">Где снег-то?</p>
             <div class="photos-users__likes">
-              <a class="photos-users__put-like" href="#">Поставить лайк</a>
+              <a class="photos-users__put-like" href="#"><span class="visually-hidden">Поставить лайк</span></a>
               <span class="photos-users__like">Нравится: 150</span>
             </div>
           </div>
@@ -174,7 +174,7 @@
             </div>
             <p class="photos-users__comment">Всем GM и взаимные лайки!</p>
             <div class="photos-users__likes">
-              <a class="photos-users__put-like" href="#">Поставить лайк</a>
+              <a class="photos-users__put-like" href="#"><span class="visually-hidden">Поставить лайк</span></a>
               <span class="photos-users__like">Нравится: 2560</span>
             </div>
           </div>
@@ -182,7 +182,7 @@
       </div>
     </section>
     <h2 class="visually-hidden">Запостите ваши фотографии</h2>
-    <p class="page-main__text">Затмите их всех! <br> Выкладывайте все, что накопилось на телефоне!</p>
+    <p class="page-main__text">Затмите их всех! <br> Выкладывайте все, что накопилось в телефоне!</p>
     <section class="upload">
       <form class="upload-form" method="post" action="https://echo.htmlacademy.ru">
         <img class="upload-form__picture" src="https://via.placeholder.com/150x150" alt="#">
@@ -214,23 +214,24 @@
 
   <footer class="footer footer__mobile--modifier">
     <div class="footer__wrap">
-      <a class="footer__logo" href="index.html">
-        <img class="footer__logo-image" src="https://via.placeholder.com/150x150" width="150" height="150" alt="Фотоприложение «Пинк»">
+      <a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="145" height="44" alt="Фотоприложение «Пинк»">
       </a>
       <ul class="footer__list">
         <li class="footer__item">
-          <a class="footer__link footer__link--twitter" href="#" target="_blank">Мы в Твиттере</a>
+          <a class="footer__link footer__link--twitter" href="#" target="_blank"><span class="visually-hidden">Мы в Твиттере</span></a>
         </li>
         <li class="footer__item">
-          <a class="footer__link footer__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
+          <a class="footer__link footer__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank"><span class="visually-hidden">Мы в Фейсбуке</span></a>
         </li>
         <li class="footer__item">
-          <a class="footer__link footer__link--youtube" href="#" target="_blank">Мы на YouTube</a>
+          <a class="footer__link footer__link--youtube" href="#" target="_blank"><span class="visually-hidden">Мы на YouTube</span></a>
         </li>
       </ul>
       <div class="footer__copyright-info">
         <p class="footer__copyright-text">Разработано
-          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
+          <a class="footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank"><span class="visually-hidden">HTML Academy</span></a>
+        </p>
         </p>
       </div>
     </div>

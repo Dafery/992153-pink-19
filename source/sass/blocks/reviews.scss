@@ -2,6 +2,7 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  margin: 0;
 }
 
 .reviews__text {
@@ -17,6 +18,37 @@
 
 .reviews__author-info {
   display: none;
+}
+
+.reviews__item {
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.reviews__nav {
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.reviews__nav-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 60px;
+  height: 12px;
+  margin: 0 auto;
+}
+
+.reviews__label {
+  width: 6px;
+  height: 6px;
+  background-color: #bec2c7;
+  border-radius: 50%;
+}
+
+.reviews__input:checked + .reviews__label {
+  background-color: #ffffff;
+  border: 3px solid $color-text;
 }
 
 @media (min-width: $tablet-width) {

@@ -1,5 +1,5 @@
 .page-main {
-  padding-top: 30px;
+  padding-top: 42px;
   text-align: center;
 }
 
@@ -12,17 +12,24 @@
   margin-bottom: 20px;
 }
 
+.page-main > .page-main__title {
+  margin-bottom: 32px;
+}
+
 .page-main__text {
-  width: 250px;
+  width: 260px;
   font-size: 14px;
   line-height: 30px;
   color: $color-text;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-top: 2px;
+  margin-bottom: 48px;
+  padding-right: 2px;
 }
 
 .page-main__text--form {
   width: 280px;
+  margin-bottom: 34px;
 }
 
 .page-main__text-span--modifier {
@@ -37,8 +44,8 @@
     margin-bottom: 20px;
   }
 
-  .page-main__title-br {
-    display: none;
+  .page-main__title:nth-child(1) {
+    margin-bottom: 0;
   }
 
   .page-main__text {
@@ -61,6 +68,10 @@
 
   .page-main__text-span--modifier {
     display: inline-block;
+  }
+
+  .page-main > .page-main__title {
+    margin-bottom: 0;
   }
 }
 

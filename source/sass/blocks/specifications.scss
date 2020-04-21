@@ -1,14 +1,25 @@
 .specifications {
   position: relative;
   background-color: $background-color-block;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 72px;
+  padding-bottom: 277px;
+  margin-bottom: 41px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 78px;
+    bottom: 0;
+    width: 165px;
+    height: 279px;
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat 50% 0;
+  }
 }
 
 .specifications__title {
   font-size: 18px;
   line-height: 10px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .specifications__description {
@@ -30,6 +41,7 @@
 .specifications__item {
   list-style-type: none;
   margin: 0;
+  margin-bottom: 40px;
   padding: 0;
 }
 

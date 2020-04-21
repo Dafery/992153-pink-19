@@ -7,6 +7,7 @@
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-bottom: 78px;
   }
 
   .effect__wrap {
@@ -16,9 +17,34 @@
     margin: 0 auto;
   }
 
+  .effect__timer {
+    position: relative;
+    width: 177px;
+    height: 149px;
+    font-size: 96px;
+    font-weight: 700;
+    color: #d22856;
+    border: 13px solid #d22856;
+    border-radius: 50%;
+    margin-top: 18px;
+    margin-right: 88px;
+    padding-top: 28px;
+
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   top: 0;
+    //   left: 0;
+    //   width: 100px;
+    //   height: 100px;
+    //   background: url("../img/icon-timer.svg") no-repeat 0 50%;
+    // }
+  }
+
   .effect__text-block {
     width: 300px;
     text-align: left;
+    margin-right: 11px;
   }
 
   .effect__title {
@@ -28,18 +54,21 @@
     line-height: 36px;
     color: #000000;
     margin: 0;
+    margin-bottom: 10px;
   }
 
   .effect__description {
     font-size: 14px;
     line-height: 24px;
     margin: 0;
+    margin-bottom: 11px;
   }
 
   .effect__link {
     font-size: 14px;
     line-height: 24px;
     color: #d22856;
+    text-decoration: underline;
   }
 }
 
@@ -82,5 +111,9 @@
     font-size: 18px;
     line-height: 30px;
     color: #d22856;
+  }
+
+  .effect__title-br {
+    display: none;
   }
 }

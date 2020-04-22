@@ -1,5 +1,5 @@
 .page-main {
-  padding-top: 30px;
+  padding-top: 42px;
   text-align: center;
 }
 
@@ -12,17 +12,24 @@
   margin-bottom: 20px;
 }
 
+.page-main > .page-main__title {
+  margin-bottom: 32px;
+}
+
 .page-main__text {
-  width: 250px;
+  width: 260px;
   font-size: 14px;
   line-height: 30px;
   color: $color-text;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-top: 2px;
+  margin-bottom: 48px;
+  padding-right: 2px;
 }
 
 .page-main__text--form {
   width: 280px;
+  margin-bottom: 34px;
 }
 
 .page-main__text-span--modifier {
@@ -34,11 +41,7 @@
     width: 620px;
     font-size: 40px;
     margin: 0 auto;
-    margin-bottom: 20px;
-  }
-
-  .page-main__title-br {
-    display: none;
+    margin-top: 5px;
   }
 
   .page-main__text {
@@ -47,6 +50,10 @@
     font-size: 18px;
     margin: 0 auto;
     margin-bottom: 30px;
+
+    &--modifier {
+      margin-bottom: 75px;
+    }
   }
 
   .page-main__title--modifier {
@@ -62,20 +69,55 @@
   .page-main__text-span--modifier {
     display: inline-block;
   }
+
+  .page-main > .page-main__title {
+    margin-bottom: 0;
+  }
+
+  .page-main__title:nth-of-type(2) {
+    margin-bottom: 50px;
+  }
+
+  .page-main--modifier {
+    padding-top: 92px;
+  }
+
+  .page-main__text-br {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .page-main {
+    padding-top: 70px;
+
+    &--modifier {
+      padding-top: 92px;
+    }
+  }
+
   .page-main__title {
     width: 820px;
     font-size: 50px;
     margin: 0 auto;
-    margin-bottom: 20px;
+  }
+
+  .page-main > .page-main__title {
+    margin-bottom: 3px;
+  }
+
+  .page-main__title:nth-of-type(2) {
+    margin-bottom: 78px;
   }
 
   .page-main__text {
     width: 780px;
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 66px;
+
+    &--modifier {
+      margin-bottom: 88px;
+    }
   }
 
   .page-main__title--modifier {
@@ -86,5 +128,9 @@
 
   .page-main__text-span--modifier {
     display: inline-block;
+  }
+
+  .page-main__text-br {
+    display: block;
   }
 }

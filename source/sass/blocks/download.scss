@@ -1,6 +1,6 @@
 .download {
-  padding-top: 33px;
-  padding-bottom: 20px;
+  padding-top: 28px;
+  padding-bottom: 17px;
 }
 
 .download__wrap {
@@ -10,7 +10,10 @@
 
 .download__list {
   display: flex;
-  margin: 0;
+  justify-content: space-between;
+  width: 210px;
+  margin: 0 auto;
+  margin-bottom: 18px;
   padding: 0;
 }
 
@@ -28,6 +31,7 @@
   line-height: 18px;
   border: 3px solid #ffffff;
   border-radius: 26px;
+  margin-bottom: 31px;
 
   &:hover {
     background-color: #ffffff;
@@ -51,15 +55,48 @@
   padding: 0;
 }
 
+.download__link {
+  display: block;
+  position: relative;
+  height: 60px;
+  width: 60px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 60px;
+    background: url("../img/logo-apple.svg") no-repeat 50% 0;
+  }
+}
+
+.download__link-android::before {
+  top: 8px;
+  left: 4px;
+  height: 50px;
+  background: url("../img/logo-android.svg") no-repeat 50% 0;
+}
+
+.download__link-pc::before {
+  top: 12px;
+  left: 10px;
+  height: 50px;
+  background: url("../img/logo-microsoft.svg") no-repeat 50% 0;
+}
+
 @media (min-width: $tablet-width) {
   .download {
-    margin-top: -360px;
-    margin-bottom: 90px;
+    position: relative;
+    margin-top: -380px;
+    margin-bottom: 75px;
     margin-left: -320px;
+    padding-top: 30px;
   }
 
   .download__list {
-    margin-top: 41px;
+    margin-top: 45px;
   }
 
   .download__wrap {
@@ -69,15 +106,16 @@
 
   .download__text {
     font-size: 18px;
-    margin-top: 37px;
+    margin-top: 33px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .download {
-    margin-top: -370px;
-    margin-bottom: 100px;
+    margin-top: -404px;
+    margin-bottom: 122px;
     margin-left: -640px;
+    padding: 0;
   }
 
   .download__wrap {
@@ -87,6 +125,11 @@
 
   .download__button {
     font-size: 21px;
+    margin-bottom: 67px;
+  }
+
+  .download__list {
+    margin-bottom: 51px;
   }
 
   .download__text {

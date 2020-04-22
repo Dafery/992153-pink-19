@@ -1,12 +1,18 @@
+.photos-users {
+  margin-bottom: 40px;
+}
+
 .photos-users__item {
   margin-bottom: 20px;
 }
 
 .photos-users__author {
+  display: inline-block;
   font-size: 14px;
   line-height: 24px;
   font-weight: 700;
   color: $color-text;
+  margin-top: 4px;
 }
 
 .photos-users__time {
@@ -14,6 +20,7 @@
   line-height: 24px;
   font-weight: 300;
   color: $color-text;
+  text-transform: uppercase;
 }
 
 .photos-users__comment {
@@ -26,11 +33,13 @@
 .photos-users__like {
   font-size: 12px;
   line-height: 24px;
+  text-transform: uppercase;
   color: #d22856;
 }
 
 .photos-users__likes {
-  margin-top: 15px;
+  position: relative;
+  margin-top: 10px;
 }
 
 .photos-users__img {
@@ -57,8 +66,27 @@
   height: 137px;
 }
 
+.photos-users__put-like {
+  width: 13px;
+  margin-right: 31px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0;
+    width: 13px;
+    height: 12px;
+    background: url("../img/icon-heart.svg") no-repeat 0 50%;
+  }
+}
+
 
 @media (min-width: $tablet-width) {
+  .photos-users {
+    margin-bottom: 45px;
+  }
+
   .photos-users__wrap {
     display: flex;
     flex-wrap: wrap;
@@ -73,7 +101,7 @@
 
   .photos-users__information {
     width: 240px;
-    min-height: 115px;
+    min-height: 116px;
     padding-top: 20px;
     padding-right: 32px;
     padding-bottom: 20px;
@@ -81,8 +109,8 @@
   }
 
   .photos-users__information--panorama-day {
-    height: 100px;
     width: 566px;
+    min-height: 101px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -104,12 +132,6 @@
     min-width: 660px;
   }
 
-  .photos-users__information--panorama-day .photos-users__likes {
-    width: 250px;
-    margin-top: 0;
-    order: -1;
-  }
-
   .photos-users__author-time {
     height: 20px;
     margin-right: 20px;
@@ -122,19 +144,61 @@
     justify-content: space-between;
     width: 240px;
     height: 20px;
-  }
-
-  .photos-users__wrap .photos-users__likes {
-    margin-top: 25px;
+    margin-top: 15px;
   }
 
   .photos-users__comment {
     min-height: 45px;
-    margin: 0;
+    margin-top: 8px;
+  }
+
+  .photos-users__information--panorama-day .photos-users__likes {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 150px;
+    margin-top: 0;
+    order: -1;
+  }
+
+  .photos-users__information--panorama-day .photos-users__like {
+    margin-top: 5px;
+    margin-left: 29px;
+  }
+
+  .photos-users__information--panorama-day .photos-users__put-like {
+    position: relative;
+    margin-right: 0;
+
+    &::before {
+      top: 10px;
+      left: -1px;
+    }
+  }
+
+  .photos-users__information--panorama-day .photos-users__comment {
+    min-height: 20px;
+    margin-top: -20px;
+  }
+
+  .photos-users__item {
+    margin-bottom: 50px;
+  }
+
+  .photos-users__put-like {
+    position: relative;
+    margin-right: 0;
+
+    &::before {
+      top: 4px;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
+  .photos-users {
+    margin-bottom: 4px;
+  }
+
   .photos-users__wrap {
     width: 940px;
     margin: 0 auto;
@@ -145,8 +209,13 @@
     height: 400px;
   }
 
+  .photos-users__information {
+    min-height: 114px;
+    padding-top: 21px;
+  }
+
   .photos-users__information--panorama-day {
-    height: 60px;
+    min-height: 50px;
     width: 881px;
     padding-right: 31px;
     padding-left: 28px;
@@ -157,7 +226,7 @@
   }
 
   .photos-users__wrap .photos-users__item {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
   }
 
   .photos-users__wrap .photos-users__item:nth-child(2n) {
@@ -172,5 +241,10 @@
     height: 505px;
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .photos-users__information--panorama-day .photos-users__comment {
+    margin-top: 8px;
+    margin-bottom: 23px;
   }
 }

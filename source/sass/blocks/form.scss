@@ -42,13 +42,10 @@
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
-  margin-right: auto;
+  // margin-right: auto;
   margin-bottom: 25px;
-  margin-left: auto;
-}
-
-.form__fieldset-os .form__legend {
-  margin-left: -35px;
+  // margin-left: auto;
+  text-align: center;
 }
 
 .form__submit {
@@ -106,13 +103,13 @@
 }
 
 .form__input {
-  width: 253px;
-  min-height: 59px;
+  width: 255px;
+  min-height: 57px;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   padding-right: 0;
-  padding-left: 23px;
-  margin-bottom: 20px;
+  padding-left: 21px;
+  margin-bottom: 17px;
 
   &:hover {
     border-color: $color-text;
@@ -132,7 +129,7 @@
 .form__data {
   width: 280px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
 }
 
 .form__item {

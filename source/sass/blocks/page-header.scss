@@ -7,6 +7,8 @@
 
 .page-header__background-wrap {
   position: relative;
+  margin: 0 auto;
+  width: 320px;
 
   &::before {
     content: "";
@@ -35,11 +37,6 @@
 .page-header__menu {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  // для закрытого меню
-  // background-color: hsla(0, 0, 0, 0.3);
-  // для открытого меню
-  background-color: #283645;
 }
 
 .page-header__wrap {
@@ -66,12 +63,16 @@
 }
 
 .page-header__wrap-menu {
-  width: 100%;
+  width: 320px;
   min-height: 69px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   border-bottom: 1px solid #000001;
+  // для закрытого меню
+  // background-color: hsla(0, 0, 0, 0.3);
+  // для открытого меню
+  background-color: #283645;
 }
 
 .page-header__logo {
@@ -119,18 +120,20 @@
   }
 
   .page-header__title {
-    width: 250px;
+    width: 240px;
     font-size: 40px;
+    margin-left: 50px;
 
     &--modifier {
       width: 500px;
       font-size: 50px;
+      margin: 0 auto;
       margin-top: 185px;
     }
   }
 
   .page-header__wrap-menu {
-    width: 100%;
+    width: 660px;
     height: 110px;
     margin: 0 auto;
   }
@@ -141,18 +144,15 @@
   }
 
   .page-header__background-wrap {
-    width: 200px;
-    margin: 0;
-    margin-top: 206px;
-    margin-left: 50px;
-  }
-
-  .page-header__background-wrap::before {
     width: 660px;
-    height: 560px;
-    left: -50px;
-    bottom: -400px;
-    background: url("../img/iphone-hand-tablet@1x.png") no-repeat 50% 0;
+    margin-top: 206px;
+
+    &::before {
+      width: 660px;
+      height: 560px;
+      bottom: -400px;
+      background: url("../img/iphone-hand-tablet@1x.png") no-repeat 50% 0;
+    }
   }
 
   .page-header__wrap {
@@ -168,39 +168,54 @@
     min-height: 853px;
 
     &--modifier {
-      min-height: 395px;
+      min-height: 393px;
     }
   }
 
   .page-header__menu {
     position: absolute;
     flex-direction: row;
-    width: 100%;
+    justify-content: space-between;
+    width: 960px;
     background-color: hsla(0, 0, 0, 0.3);
   }
 
   .page-header__title {
-    width: 750px;
     font-size: 50px;
+    margin-left: 41px;
 
     &--modifier {
-      width: 400px;
-      line-height: 60px;
+      width: 800px;
       margin: 0 auto;
-      margin-top: 219px;
+      margin-top: 176px;
     }
   }
 
   .page-header__wrap {
-    margin: 0;
+    width: 960px;
+    margin: 0 auto;
   }
 
   .page-header__wrap-menu {
     width: 150px;
-    margin: 0 auto;
+    margin: 0;
+    background-color: transparent;
   }
 
   .page-header__toggle {
     display: none;
+  }
+
+  .page-header__background-wrap {
+    width: 960px;
+    margin-top: 221px;
+
+    &::before {
+      width: 818px;
+      height: 645px;
+      top: -13px;
+      left: 142px;
+      background: url("../img/iphone-hand-desktop@1x.png") no-repeat 50% 0;
+    }
   }
 }

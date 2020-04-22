@@ -106,15 +106,16 @@
 
   .download__text {
     font-size: 18px;
-    margin-top: 34px;
+    margin-top: 33px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .download {
-    margin-top: -370px;
-    margin-bottom: 100px;
+    margin-top: -404px;
+    margin-bottom: 122px;
     margin-left: -640px;
+    padding: 0;
   }
 
   .download__wrap {
@@ -124,6 +125,11 @@
 
   .download__button {
     font-size: 21px;
+    margin-bottom: 67px;
+  }
+
+  .download__list {
+    margin-bottom: 51px;
   }
 
   .download__text {

@@ -70,14 +70,18 @@
     color: #d22856;
     text-decoration: underline;
   }
+
+  .effect__description-br:nth-of-type(1) {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .effect {
     display: block;
     background-color: $background-color-block;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 98px;
+    padding-bottom: 90px;
   }
 
   .effect__wrap {
@@ -88,8 +92,9 @@
   }
 
   .effect__text-block {
-    width: 522px;
+    width: 530px;
     text-align: left;
+    margin-right: 43px;
   }
 
   .effect__title {
@@ -99,12 +104,14 @@
     line-height: 30px;
     color: #000000;
     margin: 0;
+    margin-bottom: 25px;
   }
 
   .effect__description {
     font-size: 18px;
     line-height: 30px;
     margin: 0;
+    margin-bottom: 31px;
   }
 
   .effect__link {
@@ -115,5 +122,26 @@
 
   .effect__title-br {
     display: none;
+  }
+
+  .effect__description-br:nth-of-type(1) {
+    display: block;
+  }
+
+  .effect__description-br:nth-of-type(2) {
+    display: none;
+  }
+
+  .effect__timer {
+    width: 220px;
+    height: 185px;
+    font-size: 120px;
+    color: #d22856;
+    border: 17px solid #d22856;
+    border-radius: 50%;
+    margin-top: -23px;
+    margin-right: 88px;
+    padding-top: 34px;
+    padding-right: 3px;
   }
 }

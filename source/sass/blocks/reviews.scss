@@ -90,8 +90,21 @@
   }
 
   .reviews__wrap {
+    position: relative;
     width: 780px;
     margin: 0 auto;
+    padding-top: 88px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -10px;
+      left: 50%;
+      width: 90px;
+      height: 70px;
+      background: url("../img/icon-quotes.svg") no-repeat 0 50%;
+      margin-left: -35px;
+    }
   }
 
   .reviews__author-name {

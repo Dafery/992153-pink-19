@@ -195,6 +195,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .photos-users {
+    margin-bottom: 4px;
+  }
+
   .photos-users__wrap {
     width: 940px;
     margin: 0 auto;
@@ -205,8 +209,13 @@
     height: 400px;
   }
 
+  .photos-users__information {
+    min-height: 114px;
+    padding-top: 21px;
+  }
+
   .photos-users__information--panorama-day {
-    height: 60px;
+    min-height: 50px;
     width: 881px;
     padding-right: 31px;
     padding-left: 28px;
@@ -217,7 +226,7 @@
   }
 
   .photos-users__wrap .photos-users__item {
-    margin-bottom: 54px;
+    margin-bottom: 55px;
   }
 
   .photos-users__wrap .photos-users__item:nth-child(2n) {
@@ -232,5 +241,10 @@
     height: 505px;
     width: 1200px;
     margin: 0 auto;
+  }
+
+  .photos-users__information--panorama-day .photos-users__comment {
+    margin-top: 8px;
+    margin-bottom: 23px;
   }
 }

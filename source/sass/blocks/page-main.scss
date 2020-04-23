@@ -36,6 +36,10 @@
   display: none;
 }
 
+.page-main__title--modifier {
+  margin-bottom: 38px;
+}
+
 @media (min-width: $tablet-width) {
   .page-main__title {
     width: 620px;
@@ -59,7 +63,7 @@
   .page-main__title--modifier {
     font-size: 40px;
     width: 480px;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
   }
 
   .page-main__text--form {
@@ -123,7 +127,7 @@
   .page-main__title--modifier {
     font-size: 50px;
     width: 500px;
-    margin-bottom: 50px;
+    margin-bottom: 61px;
   }
 
   .page-main__text-span--modifier {

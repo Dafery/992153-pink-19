@@ -1,15 +1,27 @@
 .upload {
+  position: relative;
   background-color: $background-color-block;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: 202px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: #dddfe0;
+  }
 }
 
 .upload-form__button {
+  position: relative;
   width: 280px;
+  height: 55px;
   font-weight: 700;
   font-size: 18px;
   line-height: 18px;
   background-color: $background-color-block;
-  height: 49px;
-  border-radius: 25px;
+  border-radius: 35px;
 }
 
 .upload-form__submit {
@@ -48,7 +60,7 @@
   width: 280px;
   margin: 0 auto;
   padding-top: 19px;
-  padding-bottom: 43px;
+  padding-bottom: 42px;
 }
 
 .upload-form__settings-list {
@@ -58,14 +70,43 @@
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-bottom: 25px;
+  margin-bottom: 32px;
+}
+
+.upload-form__settings-button {
+  width: 40px;
+  height: 40px;
 }
 
 .upload-form__input {
+  position: relative;
   display: none;
   width: 240px;
+  height: 21px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 63px;
+}
+
+.upload-form__input::before {
+  position: absolute;
+  content: "";
+  top: 10px;
+  right: 2px;
+  width: 240px;
+  height: 2px;
+  background-color: $color-text;
+}
+
+.upload-form__input::after {
+  position: absolute;
+  content: "";
+  top: 3px;
+  right: 35px;
+  width: 10px;
+  height: 10px;
+  background-color: $background-color-block;
+  border: 2px solid #d22856;
+  border-radius: 50%;
 }
 
 .upload-form__input:nth-of-type(1) {
@@ -74,14 +115,27 @@
 
 .upload-form__picture {
   width: 280px;
-  height: 370px;
+  height: 373px;
+  margin-bottom: 45px;
 }
 
 @media (min-width: $tablet-width) {
+  .upload {
+    margin-top: 71px;
+
+    &::before {
+      display: none;
+    }
+  }
+
   .upload-form__input {
     display: block;
     width: 200px;
-    margin-bottom: 34px;
+    margin-bottom: 51px;
+  }
+
+  .upload-form__input:nth-of-type(3) {
+    margin-bottom: 0;
   }
 
   .upload-form {
@@ -90,7 +144,7 @@
     justify-content: space-between;
     width: 620px;
     padding-top: 55px;
-    padding-bottom: 55px;
+    padding-bottom: 10px;
   }
 
   .upload-form__picture {
@@ -109,21 +163,26 @@
     width: 260px;
     height: 55px;
     border-radius: 30px;
-    margin: 0 auto;
+    margin-left: 14px;
   }
 
   .upload-form__settings-list {
     display: flex;
     flex-direction: column;
-    margin-top: -10px;
+    justify-content: space-between;
+    margin-top: 8px;
     margin-right: 25px;
-    margin-bottom: 25px;
+    margin-bottom: 6px;
     margin-left: 28px;
     min-height: 165px;
   }
 
+  .upload-form__settings-item:not(.upload-form__settings-item:nth-of-type(3)) {
+    margin-bottom: 53px;
+  }
+
   .upload-form__settings-button {
-    width: 18px;
+    width: 25px;
     height: 21px;
   }
 
@@ -140,13 +199,61 @@
     height: 157px;
     padding-top: 8px;
   }
+
+  .upload-form__input::before {
+    position: absolute;
+    content: "";
+    top: 11px;
+    left: 2px;
+    width: 202px;
+    height: 2px;
+    background-color: $color-text;
+  }
+
+  .upload-form__input::after {
+    position: absolute;
+    content: "";
+    top: 5px;
+    right: 38px;
+    width: 10px;
+    height: 10px;
+    background-color: $background-color-block;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+  }
+
+  .upload-form__input:nth-of-type(2)::after {
+    left: 27px;
+  }
+
+  .upload-form__input:nth-of-type(3)::after {
+    right: 88px;
+  }
+
+  .upload-form__settings-item {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 47px;
+      left: -3px;
+      width: 275px;
+      height: 1px;
+      background-color: #dddfe0;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
+  .upload {
+    margin-top: 0;
+  }
+
   .upload-form {
     width: 800px;
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 56px;
+    padding-bottom: 12px;
     padding-right: 60px;
     padding-left: 80px;
   }
@@ -161,15 +268,37 @@
   }
 
   .upload-form__settings-list {
-    margin-top: -5px;
+    margin: 0;
     margin-right: 40px;
-    margin-left: 0;
+  }
+
+  .upload-form__settings-item {
+    position: relative;
+    margin-bottom: 28px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 56px;
+      left: 0;
+      width: 410px;
+      height: 1px;
+      background-color: #dddfe0;
+    }
+  }
+
+  .upload-form__settings-item:nth-of-type(3) {
+    margin-bottom: 0;
   }
 
   .upload-form__input {
     display: block;
     width: 288px;
-    margin-bottom: 36px;
+    margin-bottom: 51px;
+  }
+
+  .upload-form__input:nth-of-type(3) {
+    margin-bottom: 0;
   }
 
   .upload-form__button {
@@ -182,6 +311,36 @@
     display: flex;
     justify-content: space-between;
     width: 410px;
-    margin-top: 160px;
+    margin-top: 158px;
+  }
+
+  .upload-form__input::before {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 8px;
+    width: 288px;
+    height: 2px;
+    background-color: $color-text;
+  }
+
+  .upload-form__input::after {
+    position: absolute;
+    content: "";
+    top: 6px;
+    left: 79px;
+    width: 10px;
+    height: 10px;
+    background-color: $background-color-block;
+    border: 2px solid #d22856;
+    border-radius: 50%;
+  }
+
+  .upload-form__input:nth-of-type(2)::after {
+    left: 255px;
+  }
+
+  .upload-form__input:nth-of-type(3)::after {
+    left: 168px;
   }
 }

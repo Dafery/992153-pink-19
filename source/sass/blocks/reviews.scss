@@ -46,6 +46,14 @@
   border-radius: 50%;
 }
 
+.reviews__label:hover {
+  background-color: #7e868f;
+}
+
+.reviews__label:active {
+  background-color: #e9ebec;
+}
+
 .reviews__input:checked + .reviews__label {
   background-color: #ffffff;
   border: 3px solid $color-text;

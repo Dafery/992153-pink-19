@@ -5,6 +5,12 @@
   margin-bottom: 45px;
 }
 
+.prices__wrap {
+  width: 320px;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
 .prices__list {
   border-collapse: collapse;
 
@@ -84,6 +90,14 @@
   border-radius: 50%;
 }
 
+.prices__label:hover {
+  background-color: #7e868f;
+}
+
+.prices__label:active {
+  background-color: #e9ebec;
+}
+
 .prices__input:checked + .prices__label {
   background-color: #ffffff;
   border: 3px solid $color-text;
@@ -151,6 +165,11 @@
   .prices__icon::before {
     top: 7px;
     right: 59px;
+  }
+
+  .prices__wrap {
+    width: 100%;
+    overflow-x: auto;
   }
 }
 

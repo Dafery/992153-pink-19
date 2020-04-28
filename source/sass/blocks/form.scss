@@ -53,9 +53,7 @@
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
-  // margin-right: auto;
   margin-bottom: 42px;
-  // margin-left: auto;
   text-align: center;
 }
 
@@ -250,19 +248,20 @@
     width: 479px;
     margin: 0;
     margin-bottom: 10px;
-
-    // Почему не работает?
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    //   top: 0;
-    //   right: 0;
-    //   width: 60px;
-    //   height: 50px;
-    //   background: url("../img/icon-phone.svg") no-repeat 50% 0;
-    //   background-color: #e5e5e5;
-    // }
   }
+
+  // Почему не работает?
+  // .form__input-contacts--modifier::before {
+  //   position: absolute;
+  //   content: "";
+  //   top: 0;
+  //   right: 0;
+  //   width: 60px;
+  //   height: 50px;
+  //   background: url("../img/icon-phone.svg") no-repeat 50% 0;
+  //   background-color: #e5e5e5;
+  // }
+
 
   .form__contacts-wrap {
     display: flex;

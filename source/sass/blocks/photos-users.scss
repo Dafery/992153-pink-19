@@ -121,6 +121,7 @@
 
   .photos-users__wrap .photos-users__item {
     margin-right: 20px;
+    margin-bottom: 19px;
   }
 
   .photos-users__wrap .photos-users__item:nth-child(2n) {
@@ -239,7 +240,7 @@
 
   .photos-users__img--panorama-day {
     height: 505px;
-    width: 1200px;
+    min-width: 960px;
     margin: 0 auto;
   }
 

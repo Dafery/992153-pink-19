@@ -1,6 +1,11 @@
-.main-nav {
+.main-nav,
+.main-nav__js-open {
   display: block;
   min-height: 200px;
+}
+
+.main-nav__js-close {
+  display: none;
 }
 
 .main-nav__list {

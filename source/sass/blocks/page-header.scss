@@ -62,17 +62,20 @@
   height: 23px;
 }
 
-.page-header__wrap-menu {
+.page-header__wrap-menu,
+.page-header__js-open {
   width: 320px;
   min-height: 69px;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
   border-bottom: 1px solid #000001;
-  // для закрытого меню
-  // background-color: hsla(0, 0, 0, 0.3);
-  // для открытого меню
   background-color: #283645;
+}
+
+.page-header__js-close {
+  border-bottom: none;
+  background-color: hsla(0, 0, 0, 0.3);
 }
 
 .page-header__logo {
@@ -81,12 +84,17 @@
 }
 
 .page-header__toggle {
+  display: none;
   position: relative;
   width: 80px;
   height: 60px;
   border: none;
   background-color: transparent;
   padding: 0;
+}
+
+.page-header__toggle-open {
+  display: block;
 
   &::before {
     content: "";
@@ -96,6 +104,20 @@
     width: 60px;
     height: 50px;
     background: url("../img/icon-menu-cross.svg") no-repeat 50% 0;
+  }
+}
+
+.page-header__toggle-close {
+  display: block;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 25px;
+    left: 6px;
+    width: 60px;
+    height: 50px;
+    background: url("../img/icon-menu-burger.svg") no-repeat 50% 0;
   }
 }
 

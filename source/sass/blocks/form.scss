@@ -1,5 +1,6 @@
 .form {
   text-align: left;
+  margin-bottom: 16px;
 }
 
 .form__list {
@@ -26,7 +27,7 @@
 .form__fieldset-wrap {
   background-color: $background-color-block;
   padding-top: 40px;
-  margin-bottom: 40px;
+  margin-bottom: 32px;
 }
 
 .form__fieldset {
@@ -36,15 +37,23 @@
   padding: 0;
 }
 
+.form__fieldset-contacts {
+  margin-bottom: 25px;
+}
+
+.form__fieldset-os {
+  margin-top: -2px;
+  margin-bottom: 39px;
+  padding-bottom: 3px;
+}
+
 .form__legend {
-  width: 280px;
+  width: 250px;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
   text-transform: uppercase;
-  // margin-right: auto;
-  margin-bottom: 25px;
-  // margin-left: auto;
+  margin-bottom: 42px;
   text-align: center;
 }
 
@@ -105,6 +114,9 @@
 .form__input {
   width: 255px;
   min-height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-text;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   padding-right: 0;
@@ -121,9 +133,11 @@
 }
 
 .form__input-emotions {
+  width: 259px;
   min-height: 180px;
-  padding-top: 20px;
-  margin-bottom: 40px;
+  margin-bottom: 46px;
+  padding-top: 14px;
+  padding-left: 19px;
 }
 
 .form__data {
@@ -138,6 +152,15 @@
   margin: 0;
   padding: 0;
   margin-bottom: 35px;
+  padding-left: 52px;
+}
+
+.form__item-achievement {
+  margin-bottom: 43px;
+}
+
+.form__item-achievement:nth-last-child(1) {
+  margin-bottom: 38px;
 }
 
 .form__label-achievement,
@@ -145,6 +168,14 @@
   font-size: 18px;
   line-height: 30px;
   color: $color-text;
+}
+
+.form__legend-os {
+  margin-bottom: 40px;
+}
+
+.form__legend-emotions {
+  margin-bottom: 16px;
 }
 
 .form__legend--modifier {
@@ -157,11 +188,13 @@
     flex-direction: column;
     width: 620px;
     margin: 0 auto;
+    margin-bottom: 52px;
   }
 
   .form__data {
     width: 620px;
     background-color: #ffffff;
+    margin-bottom: 8px;
   }
 
   .form__fieldset-wrap {
@@ -171,28 +204,36 @@
     padding: 0;
   }
 
+  .form__fieldset-contacts .form__input {
+    padding-left: 18px;
+  }
+
   .form__label {
-    margin-right: 17px;
+    margin-right: 14px;
     margin-left: 0;
   }
 
   .form__input {
-    width: 494px;
+    width: 500px;
+    margin-bottom: 52px;
   }
 
+
   .form__input--modifier {
-    width: 535px;
+    width: 540px;
   }
 
   .form__fieldset {
     width: 558px;
     border: 2px solid #e6e6e6;
+    margin-bottom: 57px;
     padding-left: 58px;
-    margin-bottom: 60px;
+    padding-bottom: 14px;
   }
 
   .form__legend--modifier {
     display: block;
+    margin-bottom: 37px;
   }
 
   .form__legend {
@@ -200,25 +241,49 @@
     padding: 0 30px;
   }
 
-  .form__input-contacts--modifier {
-    width: 473px;
+  .form__legend-os {
+    margin-bottom: 48px;
+    padding: 0 26px;
+  }
+
+  .form__input-contacts {
+    position: relative;
+    width: 479px;
     margin: 0;
     margin-bottom: 10px;
   }
+
+  // Почему не работает?
+  // .form__input-contacts::before {
+  //   position: absolute;
+  //   content: "";
+  //   top: 0;
+  //   right: 0;
+  //   width: 60px;
+  //   height: 50px;
+  //   background: url("../img/icon-phone.svg") no-repeat 50% 0;
+  //   background-color: #e5e5e5;
+  // }
+
 
   .form__contacts-wrap {
     display: flex;
     flex-direction: column-reverse;
   }
 
-  .form__label-contacts--modifier {
+  .form__label-contacts {
     margin-bottom: 30px;
     margin-left: 20px;
   }
 
+  .form__contacts-wrap:nth-last-child(1) .form__label-contacts {
+    margin-bottom: 11px;
+  }
+
   .form__input-emotions {
-    width: 473px;
-    min-height: 188px;
+    width: 477px;
+    min-height: 173px;
+    margin-bottom: 34px;
   }
 
   .form__submit-wrap {
@@ -228,6 +293,7 @@
     align-items: center;
     width: 620px;
     margin: 0 auto;
+    margin-top: 9px;
   }
 
   .form__submit {
@@ -237,6 +303,8 @@
 
   .form__required {
     margin: 0;
+    margin-top: 5px;
+    margin-right: -3px;
   }
 
   .form__block:nth-child(1) {
@@ -250,6 +318,27 @@
   .form__block:nth-child(4) {
     order: -2;
   }
+
+  .form__item {
+    padding-left: 42px;
+    margin-bottom: 36px;
+  }
+
+  .form__legend-achievement {
+    margin-bottom: 48px;
+  }
+
+  .form__item-achievement {
+    margin-bottom: 43px;
+  }
+
+  .form__item-achievement:nth-last-child(1) {
+    margin-bottom: 30px;
+  }
+
+  .form__legend-emotions {
+    margin-bottom: 37px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -260,6 +349,7 @@
     flex-wrap: wrap;
     text-align: left;
     width: 940px;
+    margin-bottom: 71px;
   }
 
   .form__data {
@@ -269,20 +359,21 @@
   }
 
   .form__input {
-    width: 313px;
-    margin-bottom: 50px;
-  }
+    width: 316px;
+    margin-bottom: 52px;
+    padding-left: 19px;
 
-  .form__input:nth-last-child(1) {
-    margin-bottom: 0;
+    &--modifier {
+      width: 356px;
+    }
   }
 
   .form__label {
     margin-right: 15px;
   }
 
-  .form__input--modifier {
-    width: 353px;
+  .form__legend-emotions {
+    margin-bottom: 34px;
   }
 
   .form__fieldset {
@@ -295,44 +386,66 @@
   }
 
   .form__fieldset-os {
-    width: 370px;
+    width: 357px;
     min-height: 300px;
     margin: 0;
+    margin-bottom: 57px;
     padding-left: 74px;
     padding-right: 0;
-    margin-bottom: 60px;
+    padding-bottom: 5px;
   }
 
   .form__legend {
     width: auto;
-    padding: 0 25px;
+    padding: 0 37px;
+
+    &--modifier {
+      margin-bottom: 34px;
+    }
+  }
+
+  .form__legend-os {
+    padding: 0 19px;
+    margin-bottom: 50px;
   }
 
   .form__fieldset-achievement {
     width: 820px;
-    min-height: 170px;
+    padding-bottom: 0;
   }
 
   .form__list-achievement {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    height: 150px;
+    height: 171px;
+  }
+
+  .form__item-achievement {
+    min-width: 273px;
+    margin-bottom: 44px;
+    padding-left: 42px;
+  }
+
+  .form__item-achievement:nth-of-type(5),
+  .form__item-achievement:nth-of-type(6) {
+    min-width: auto;
+    margin-left: -20px;
   }
 
   .form__input-emotions {
-    width: 796px;
+    width: 798px;
     min-height: 110px;
     padding: 0;
     padding-top: 15px;
-    padding-left: 20px;
+    padding-left: 18px;
     margin: 0;
-    // Почему не работает нижний марджин?
-    margin-bottom: 42px;
+    margin-bottom: 26px;
   }
 
   .form__submit-wrap {
     width: 940px;
+    margin-top: 7px;
   }
 
   .form__required-span {
@@ -341,6 +454,7 @@
 
   .form__required {
     min-width: 315px;
+    margin-right: 1px;
   }
 
   .form__contacts-wrapper {
@@ -348,7 +462,20 @@
     justify-content: space-between;
   }
 
-  .form__input-contacts--modifier {
-    width: 347px;
+  .form__fieldset-contacts {
+    padding-bottom: 13px;
+  }
+
+  .form__input-contacts {
+    width: 353px;
+    margin-bottom: 10px;
+  }
+
+  .form__label-contacts {
+    margin-bottom: 0;
+  }
+
+  .form__contacts-wrap:nth-last-child(1) .form__label-contacts {
+    margin-bottom: 0;
   }
 }

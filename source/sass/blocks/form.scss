@@ -114,6 +114,9 @@
 .form__input {
   width: 255px;
   min-height: 57px;
+  font-size: 18px;
+  line-height: 30px;
+  color: $color-text;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
   padding-right: 0;
@@ -243,7 +246,7 @@
     padding: 0 26px;
   }
 
-  .form__input-contacts--modifier {
+  .form__input-contacts {
     position: relative;
     width: 479px;
     margin: 0;
@@ -251,7 +254,7 @@
   }
 
   // Почему не работает?
-  // .form__input-contacts--modifier::before {
+  // .form__input-contacts::before {
   //   position: absolute;
   //   content: "";
   //   top: 0;
@@ -268,12 +271,12 @@
     flex-direction: column-reverse;
   }
 
-  .form__label-contacts--modifier {
+  .form__label-contacts {
     margin-bottom: 30px;
     margin-left: 20px;
   }
 
-  .form__contacts-wrap:nth-last-child(1) .form__label-contacts--modifier {
+  .form__contacts-wrap:nth-last-child(1) .form__label-contacts {
     margin-bottom: 11px;
   }
 
@@ -346,6 +349,7 @@
     flex-wrap: wrap;
     text-align: left;
     width: 940px;
+    margin-bottom: 71px;
   }
 
   .form__data {
@@ -369,7 +373,7 @@
   }
 
   .form__legend-emotions {
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 
   .form__fieldset {
@@ -425,6 +429,7 @@
 
   .form__item-achievement:nth-of-type(5),
   .form__item-achievement:nth-of-type(6) {
+    min-width: auto;
     margin-left: -20px;
   }
 
@@ -440,6 +445,7 @@
 
   .form__submit-wrap {
     width: 940px;
+    margin-top: 7px;
   }
 
   .form__required-span {
@@ -460,16 +466,16 @@
     padding-bottom: 13px;
   }
 
-  .form__input-contacts--modifier {
+  .form__input-contacts {
     width: 353px;
     margin-bottom: 10px;
   }
 
-  .form__label-contacts--modifier {
+  .form__label-contacts {
     margin-bottom: 0;
   }
 
-  .form__contacts-wrap:nth-last-child(1) .form__label-contacts--modifier {
+  .form__contacts-wrap:nth-last-child(1) .form__label-contacts {
     margin-bottom: 0;
   }
 }

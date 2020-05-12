@@ -155,12 +155,80 @@
   padding-left: 52px;
 }
 
+.form__input-achievement,
+.form__input-os {
+  opacity: 0;
+}
+
 .form__item-achievement {
   margin-bottom: 43px;
 }
 
+.form__label-os {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -7px;
+    left: -70px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+    background-color: #ffffff;
+  }
+}
+
+.form__label-achievement {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -7px;
+    left: -70px;
+    width: 35px;
+    height: 35px;
+    border: 2px solid #e5e5e5;
+    border-radius: 2px;
+    background-color: #ffffff;
+  }
+}
+
+.form__label-achievement:hover::before,
+.form__label-os:hover::before {
+  border-color: $color-text;
+}
+
+.form__label-achievement:active::before,
+.form__label-os:active::before {
+  border-color: #d22856;
+}
+
 .form__item-achievement:nth-last-child(1) {
   margin-bottom: 38px;
+}
+
+.form__input-achievement:checked + .form__label-achievement::after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: -62px;
+  width: 25px;
+  height: 25px;
+  background: url("../img/icon-yes.svg") no-repeat 50% 0;
+}
+
+.form__input-os:checked + .form__label-os::after {
+  position: absolute;
+  content: "";
+  top: 4px;
+  left: -58px;
+  width: 15px;
+  height: 15px;
+  background-color: #d22856;
+  border-radius: 50%;
 }
 
 .form__label-achievement,

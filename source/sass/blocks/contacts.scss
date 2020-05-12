@@ -48,9 +48,31 @@
 }
 
 .contacts__map {
-  background: url("../img/bg-map-mobile@1x.png") no-repeat 50% 0;
+  position: relative;
+  min-height: 200px;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat 50% 100%;
   background-size: auto 645px;
-  min-height: 645px;
+  margin-top: 16px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 96px;
+    right: 142px;
+    width: 37px;
+    height: 37px;
+    background: url("../img/icon-map-marker.svg") no-repeat 50% 0;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
+}
+
+.contacts__map iframe {
+  position: relative;
+  width: 320px;
+  height: 203px;
 }
 
 @media (min-width: $tablet-width) {
@@ -91,10 +113,27 @@
   }
 
   .contacts__map {
-    background: url("../img/bg-map-tablet@1x.jpg") no-repeat 50% 0;
+    min-height: 372px;
+    width: 660px;
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat 50% 73%;
     background-size: auto 848px;
-    min-height: 848px;
-    margin-bottom: 5px;
+    margin: 0 auto;
+    margin-top: -10px;
+
+    &::before {
+      top: 192px;
+      right: 312px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
+  }
+
+  .contacts__map iframe {
+    position: relative;
+    width: 660px;
+    height: 372px;
   }
 }
 
@@ -131,8 +170,25 @@
   }
 
   .contacts__map {
-    background: url("../img/bg-map-desktop@1x.jpg") no-repeat 50% 0;
+    min-height: 480px;
+    width: 960px;
+    background: url("../img/bg-map-desktop@1x.jpg") no-repeat 50% 60%;
     background-size: auto 976px;
-    min-height: 976px;
+    margin-top: 0;
+
+    &::before {
+      top: 244px;
+      right: 462px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
+  }
+
+  .contacts__map iframe {
+    position: relative;
+    width: 960px;
+    height: 480px;
   }
 }

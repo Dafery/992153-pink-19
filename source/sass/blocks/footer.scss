@@ -34,9 +34,19 @@
 .footer__link {
   position: relative;
   display: block;
-  width: 51px;
-  height: 51px;
+  width: 46px;
+  height: 46px;
   margin-bottom: 13px;
+  border: 3px solid #e9ebec;
+  border-radius: 50%;
+
+  &:hover {
+    border-color: $color-text;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 
   &::before {
     content: "";
@@ -46,8 +56,6 @@
     width: 45px;
     height: 45px;
     background: url("../img/icon-twitter.svg") no-repeat 50%;
-    border: 3px solid #e9ebec;
-    border-radius: 50%;
   }
 }
 
@@ -65,25 +73,29 @@
 }
 
 .footer__copyright-link {
-  position: relative;
   display: inline-block;
+  position: relative;
   width: 29px;
   height: 33px;
+}
 
-  &::before {
-    position: absolute;
-    content: "";
-    top: 12px;
-    left: 11px;
-    width: 29px;
-    height: 35px;
-    background: url("../img/logo-htmlacademy.svg") no-repeat 0 50%;
-  }
+.footer__copyright-link:hover path {
+  fill: $color-text;
+}
+
+.footer__copyright-link:active path {
+  opacity: 0.3;
 }
 
 .footer__copyright-text {
   font-size: 14px;
   margin-right: 9px;
+}
+
+.footer__copyright-link svg {
+  position: absolute;
+  top: 12px;
+  left: 10px;
 }
 
 @media (min-width: $tablet-width) {
@@ -121,8 +133,7 @@
 @media (min-width: $desktop-width) {
   .footer {
     display: block;
-    padding-top: 20px;
-    // padding-bottom: 80px;
+    padding-top: 72px;
   }
 
   .footer__wrap {

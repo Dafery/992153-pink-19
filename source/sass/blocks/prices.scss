@@ -109,16 +109,37 @@
   &::before {
     position: absolute;
     content: "";
-    top: 12px;
-    right: 15px;
-    width: 30px;
+    top: 13px;
+    right: 17px;
+    width: 31px;
     height: 30px;
-    background: url("../img/icon-yes.svg") no-repeat 0 50%;
+    background: url("../img/icon-yes-green.svg") no-repeat 0 50%;
+    background-size: contain;
   }
 }
 
 .prices__icon-no::before {
+  position: absolute;
+  content: "";
+  top: 12px;
+  right: 15px;
+  width: 30px;
+  height: 30px;
   background: url("../img/icon-no.svg") no-repeat 0 50%;
+}
+
+.prices__title--hit {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -2px;
+    width: 70px;
+    height: 70px;
+    background: url("../img/bg-hit.svg") no-repeat 50% 0;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -132,6 +153,11 @@
     height: 71px;
     font-size: 16px;
     padding-top: 8px;
+  }
+
+  .prices__title--hit::before {
+    left: -5px;
+    background: url("../img/bg-hit-tablet.svg") no-repeat 50% 0;
   }
 
   .prices__span {
@@ -205,5 +231,10 @@
   .prices__icon::before {
     top: 13px;
     right: 100px;
+  }
+
+  .prices__title--hit::before {
+    left: 0;
+    background: url("../img/bg-hit.svg") no-repeat 50% 0;
   }
 }

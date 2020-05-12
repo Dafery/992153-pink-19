@@ -7,7 +7,7 @@
     display: block;
     padding-top: 20px;
     padding-bottom: 20px;
-    margin-bottom: 78px;
+    margin-bottom: 86px;
   }
 
   .effect__wrap {
@@ -24,21 +24,31 @@
     font-size: 96px;
     font-weight: 700;
     color: #d22856;
-    border: 13px solid #d22856;
-    border-radius: 50%;
-    margin-top: 18px;
-    margin-right: 88px;
+    margin-top: 32px;
+    margin-right: 102px;
     padding-top: 28px;
 
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    //   top: 0;
-    //   left: 0;
-    //   width: 100px;
-    //   height: 100px;
-    //   background: url("../img/icon-timer.svg") no-repeat 0 50%;
-    // }
+    &::before {
+      position: absolute;
+      content: "";
+      top: -70px;
+      left: -48px;
+      width: 275px;
+      height: 275px;
+      background: url("../img/icon-timer.svg") no-repeat 50% 0;
+      background-size: contain;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -15px;
+      left: -12px;
+      width: 203px;
+      height: 203px;
+      background: url("../img/icon-editor-diagram-fill.svg") no-repeat 50% 0;
+      background-size: contain;
+    }
   }
 
   .effect__text-block {
@@ -81,7 +91,8 @@
     display: block;
     background-color: $background-color-block;
     padding-top: 98px;
-    padding-bottom: 90px;
+    padding-bottom: 105px;
+    margin-bottom: 81px;
   }
 
   .effect__wrap {
@@ -137,11 +148,31 @@
     height: 185px;
     font-size: 120px;
     color: #d22856;
-    border: 17px solid #d22856;
-    border-radius: 50%;
-    margin-top: -23px;
-    margin-right: 90px;
+    margin-top: -7px;
+    margin-right: 107px;
     padding-top: 34px;
     padding-right: 3px;
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: -85px;
+      left: -62px;
+      width: 345px;
+      height: 345px;
+      background: url("../img/icon-timer.svg") no-repeat 50% 0;
+      background-size: contain;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: -17px;
+      left: -16px;
+      width: 252px;
+      height: 252px;
+      background: url("../img/icon-editor-diagram-fill.svg") no-repeat 50% 0;
+      background-size: contain;
+    }
   }
 }

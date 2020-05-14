@@ -24,11 +24,13 @@
   border-radius: 35px;
 }
 
-.upload-form__button-active path{
+.upload-form__button-active path,
+.upload-form__button-active rect {
   fill: #d22856;
 }
 
-.upload-form__settings-button:hover path {
+.upload-form__settings-button:hover path,
+.upload-form__settings-button:hover rect {
   fill: #8d949b;
 }
 
@@ -230,7 +232,8 @@
     padding: 0;
   }
 
-  .upload-form__settings-button path {
+  .upload-form__settings-button path,
+  .upload-form__settings-button rect {
     fill: #d22856;
   }
 

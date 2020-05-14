@@ -1,3 +1,19 @@
+.contacts {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 366px;
+    left: calc(50% - 160px);
+    width: 320px;
+    height: 100px;
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 0;
+    background-size: contain;
+    z-index: 1;
+  }
+}
+
 .contacts__name {
   font-weight: 700;
   font-size: 18px;
@@ -76,6 +92,12 @@
 }
 
 @media (min-width: $tablet-width) {
+  .contacts::before {
+    top: 358px;
+    left: calc(50% - 330px);
+    width: 660px;
+  }
+
   .contacts__name {
     margin-bottom: 7px;
   }
@@ -138,6 +160,12 @@
 }
 
 @media (min-width: $desktop-width) {
+  .contacts::before {
+    top: 317px;
+    left: calc(50% - 480px);
+    width: 960px;
+  }
+
   .contacts__name {
     margin-bottom: 25px;
   }

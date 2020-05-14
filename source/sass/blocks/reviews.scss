@@ -139,14 +139,14 @@
   }
 
   .reviews__button-right::before {
-      position: absolute;
-      content: "";
-      top: -212px;
-      left: 838px;
-      width: 22px;
-      height: 42px;
-      background: url("../img/icon-review-arrow-right.svg") no-repeat 0 50%;
-      opacity: 0.3;
+    position: absolute;
+    content: "";
+    top: -212px;
+    left: 838px;
+    width: 22px;
+    height: 42px;
+    background: url("../img/icon-review-arrow-right.svg") no-repeat 0 50%;
+    opacity: 0.3;
   }
 
   .reviews__button:hover::before {

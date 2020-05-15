@@ -1,8 +1,20 @@
 .prices {
+  position: relative;
   background-color: $background-color-block;
   overflow-x: hidden;
   padding-top: 93px;
   margin-bottom: 45px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/bg-triangle-white.svg") no-repeat 50% 0;
+    background-size: contain;
+  }
 }
 
 .prices__wrap {
@@ -21,6 +33,7 @@
 }
 
 .prices__title {
+  position: relative;
   width: 275px;
   height: 95px;
   font-weight: 700;
@@ -128,17 +141,26 @@
   background: url("../img/icon-no.svg") no-repeat 0 50%;
 }
 
-.prices__title--hit {
-  position: relative;
+.prices__title-hit {
+  position: absolute;
+  top: 12px;
+  left: 9px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  transform: rotate(-45deg);
 
   &::before {
     position: absolute;
     content: "";
-    top: 0;
-    left: -2px;
-    width: 70px;
-    height: 70px;
+    top: -6px;
+    left: -22px;
+    width: 75px;
+    height: 75px;
     background: url("../img/bg-hit.svg") no-repeat 50% 0;
+    background-size: contain;
+    transform: rotate(45deg);
+    z-index: -1;
   }
 }
 
@@ -155,9 +177,18 @@
     padding-top: 8px;
   }
 
-  .prices__title--hit::before {
-    left: -5px;
-    background: url("../img/bg-hit-tablet.svg") no-repeat 50% 0;
+  .prices__title-hit {
+    position: absolute;
+    top: 5px;
+    left: 7px;
+
+    &::before {
+      top: -1px;
+      left: -19px;
+      width: 62px;
+      height: 62px;
+      background: url("../img/bg-hit-tablet.svg") no-repeat 50% 0;
+    }
   }
 
   .prices__span {
@@ -233,8 +264,17 @@
     right: 100px;
   }
 
-  .prices__title--hit::before {
-    left: 0;
-    background: url("../img/bg-hit.svg") no-repeat 50% 0;
+  .prices__title-hit {
+    position: absolute;
+    top: 12px;
+    left: 11px;
+
+    &::before {
+      top: -5px;
+      left: -22px;
+      width: 74px;
+      height: 74px;
+      background: url("../img/bg-hit.svg") no-repeat 50% 0;
+    }
   }
 }

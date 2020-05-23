@@ -27,6 +27,14 @@
   border-top: 1px solid #485461;
   border-bottom: 1px solid #000001;
   text-transform: uppercase;
+
+  &:hover {
+    color: #d22856;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__item {

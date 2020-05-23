@@ -89,6 +89,7 @@
 .page-header__logo {
   margin-top: 22px;
   margin-left: 20px;
+  cursor: pointer;
 }
 
 .page-header__toggle {
@@ -113,6 +114,14 @@
     height: 50px;
     background: url("../img/icon-menu-cross.svg") no-repeat 50% 0;
   }
+
+  &:hover::before {
+    background: url("../img/icon-menu-cross-hover.svg") no-repeat 50% 0;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
 
 .page-header__js-close .page-header__toggle {
@@ -127,7 +136,41 @@
     height: 50px;
     background: url("../img/icon-menu-burger.svg") no-repeat 50% 0;
   }
+
+  &:hover::before {
+    background: url("../img/icon-menu-burger-hover.svg") no-repeat 50% 0;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
 }
+
+.page-header__logo svg {
+  margin-top: -17px;
+  margin-left: -72px;
+}
+
+.page-header__logo-star,
+.page-header__logo-glassesdekstop,
+.page-header__logo-glassestablet,
+.page-header__logo-stars {
+  display: none;
+}
+
+.page-header__logo:hover .page-header__logo-pink,
+.page-header__logo:hover .page-header__logo-glassestablet,
+.page-header__logo:hover .page-header__logo-glassesdekstop {
+  fill: #d22856;
+}
+
+.page-header__logo:active .page-header__logo-pink,
+.page-header__logo:active .page-header__logo-glassestablet,
+.page-header__logo:active .page-header__logo-glassesdekstop {
+  fill: #ffffff;
+  opacity: 0.3;
+}
+
 
 @media (min-width: $tablet-width) {
   .page-header__background {
@@ -197,6 +240,15 @@
   .page-header__wrap {
     margin-bottom: 0;
   }
+
+  .page-header__logo svg {
+    margin-top: 5px;
+    margin-left: 1px;
+  }
+
+  .page-header__logo-glassestablet {
+    display: inline-block;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -264,5 +316,19 @@
         background: url("../img/iphone-hand-desktop@2x.png") contain;
       }
     }
+  }
+
+  .page-header__logo-glassestablet {
+    display: none;
+  }
+
+  .page-header__logo-star,
+  .page-header__logo-glassesdekstop,
+  .page-header__logo-stars {
+    display: inline-block;
+  }
+
+  .page-header__logo svg {
+    margin-left: -9px;
   }
 }

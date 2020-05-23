@@ -5,9 +5,9 @@
     position: absolute;
     content: "";
     top: 366px;
-    left: calc(50% - 160px);
-    width: 320px;
-    height: 100px;
+    left: 0;
+    width: 100%;
+    height: 200px;
     background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 0;
     background-size: contain;
     z-index: 1;
@@ -87,15 +87,13 @@
 
 .contacts__map iframe {
   position: relative;
-  width: 320px;
+  width: 100%;
   height: 203px;
 }
 
 @media (min-width: $tablet-width) {
   .contacts::before {
     top: 358px;
-    left: calc(50% - 330px);
-    width: 660px;
   }
 
   .contacts__name {
@@ -136,7 +134,7 @@
 
   .contacts__map {
     min-height: 372px;
-    width: 660px;
+    width: 100%;
     background: url("../img/bg-map-tablet@1x.jpg") no-repeat 50% 73%;
     background-size: auto 848px;
     margin: 0 auto;
@@ -154,7 +152,6 @@
 
   .contacts__map iframe {
     position: relative;
-    width: 660px;
     height: 372px;
   }
 }
@@ -162,8 +159,6 @@
 @media (min-width: $desktop-width) {
   .contacts::before {
     top: 317px;
-    left: calc(50% - 480px);
-    width: 960px;
   }
 
   .contacts__name {
@@ -199,7 +194,6 @@
 
   .contacts__map {
     min-height: 480px;
-    width: 960px;
     background: url("../img/bg-map-desktop@1x.jpg") no-repeat 50% 60%;
     background-size: auto 976px;
     margin-top: 0;
@@ -216,7 +210,6 @@
 
   .contacts__map iframe {
     position: relative;
-    width: 960px;
     height: 480px;
   }
 }

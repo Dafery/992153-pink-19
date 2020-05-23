@@ -98,6 +98,24 @@
   left: 10px;
 }
 
+.footer__logo-star,
+.footer__logo-glassesdekstop,
+.footer__logo-stars {
+  display: none;
+}
+
+.footer__logo:hover .footer__logo-pink {
+  fill: #d22856;
+}
+
+.footer__logo:active .footer__logo-pink {
+  fill: $color-text;
+}
+
+.footer__logo:active svg {
+  opacity: 0.3;
+}
+
 @media (min-width: $tablet-width) {
   .footer {
     display: block;
@@ -107,7 +125,7 @@
 
   .footer__wrap {
     width: 620px;
-    min-height: 80px;
+    min-height: 60px;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -166,5 +184,19 @@
 
   .footer--modifier {
     padding: 0;
+  }
+
+  .footer__logo-glassestablet {
+    display: none;
+  }
+
+  .footer__logo-star,
+  .footer__logo-glassesdekstop,
+  .footer__logo-stars {
+    display: inline-block;
+  }
+
+  .footer__logo {
+    margin-top: -3px;
   }
 }

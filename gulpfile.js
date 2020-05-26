@@ -121,17 +121,17 @@ gulp.task("server", function () {
   done();
 });
 
-gulp.task('minify', function () {
-  return gulp.src('src/*.html')
+gulp.task("minify", function () {
+  return gulp.src("source/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('dist'));
+    .pipe(gulp.dest("build"));
 });
 
-gulp.task('compress', function () {
+gulp.task("compress", function () {
   return pipeline(
-    gulp.src('lib/*.js'),
+    gulp.src("source/js/*.js"),
     uglify(),
-    gulp.dest('dist')
+    gulp.dest("build/js")
   );
 });
 

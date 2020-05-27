@@ -55,21 +55,27 @@
     left: 0;
     width: 45px;
     height: 45px;
-    background: url("../img/icon-twitter.svg") no-repeat 50%;
+    background-image: url("../img/icon-twitter.svg");
+    background-repeat: no-repeat;
+    background-position: 50%;
   }
 }
 
 .footer__link--facebook::before {
-  background: url("../img/icon-facebook.svg") no-repeat 50%;
+  background-image: url("../img/icon-facebook.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .footer__link--youtube::before {
-  background: url("../img/icon-youtube.svg") no-repeat 50%;
+  background-image: url("../img/icon-youtube.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .footer__logo {
   display: block;
-  margin-bottom: 37px;
+  margin-bottom: 35px;
 }
 
 .footer__copyright-link {
@@ -90,6 +96,7 @@
 .footer__copyright-text {
   font-size: 14px;
   margin-right: 9px;
+  margin-top: 12px;
 }
 
 .footer__copyright-link svg {
@@ -119,7 +126,7 @@
 @media (min-width: $tablet-width) {
   .footer {
     display: block;
-    padding-top: 35px;
+    padding-top: 32px;
     padding-bottom: 45px;
   }
 
@@ -141,6 +148,7 @@
     font-size: 14px;
     line-height: 18px;
     color: $color-text;
+    margin-top: 15px;
   }
 
   .footer__copyright-info {

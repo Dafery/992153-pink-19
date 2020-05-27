@@ -4,11 +4,13 @@
   &::before {
     position: absolute;
     content: "";
-    top: 366px;
+    top: 376px;
     left: 0;
     width: 100%;
     height: 200px;
-    background: url("../img/bg-triangle-white-footer.svg") no-repeat 50% 0;
+    background-image: url("../img/bg-triangle-white-footer.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
     background-size: contain;
     z-index: 1;
   }
@@ -18,15 +20,14 @@
   font-weight: 700;
   font-size: 18px;
   color: $color-text;
-  margin-bottom: 4px;
 }
 
 .contacts__item:nth-of-type(2) .contacts__name {
-  margin-bottom: 6px;
+  margin-bottom: 0;
 }
 
 .contacts__item:nth-of-type(2) {
-  margin-bottom: 29px;
+  margin-bottom: 21px;
   margin-left: 3px;
 }
 
@@ -44,7 +45,7 @@
 .contacts__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 .contacts__list {
@@ -66,7 +67,9 @@
 .contacts__map {
   position: relative;
   min-height: 200px;
-  background: url("../img/bg-map-mobile@1x.png") no-repeat 50% 100%;
+  background-image: url("../img/bg-map-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
   background-size: auto 645px;
   margin-top: 16px;
 
@@ -77,7 +80,9 @@
     right: 142px;
     width: 37px;
     height: 37px;
-    background: url("../img/icon-map-marker.svg") no-repeat 50% 0;
+    background-image: url("../img/icon-map-marker.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
   }
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -93,24 +98,25 @@
 
 @media (min-width: $tablet-width) {
   .contacts::before {
-    top: 358px;
+    top: 368px;
   }
 
   .contacts__name {
-    margin-bottom: 7px;
+    margin-bottom: 2px;
   }
 
   .contacts__item:nth-of-type(2) .contacts__name {
-    margin-bottom: 9px;
+    margin-bottom: 5px;
   }
 
   .contacts__item:nth-of-type(3) .contacts__name {
-    margin-bottom: 10px;
+    margin-bottom: 0;
   }
 
   .contacts__item {
     display: flex;
     flex-direction: column;
+    margin-bottom: 14px;
   }
 
   .contacts__item:nth-of-type(1) {
@@ -135,7 +141,9 @@
   .contacts__map {
     min-height: 372px;
     width: 100%;
-    background: url("../img/bg-map-tablet@1x.jpg") no-repeat 50% 73%;
+    background-image: url("../img/bg-map-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 73%;
     background-size: auto 848px;
     margin: 0 auto;
     margin-top: -10px;
@@ -158,11 +166,11 @@
 
 @media (min-width: $desktop-width) {
   .contacts::before {
-    top: 317px;
+    top: 320px;
   }
 
   .contacts__name {
-    margin-bottom: 25px;
+    margin-bottom: 23px;
   }
 
   .contacts__list {
@@ -173,7 +181,7 @@
     width: 880px;
     min-height: auto;
     margin: 0 auto;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   .contacts__item:nth-of-type(2) {
@@ -181,7 +189,7 @@
   }
 
   .contacts__item:nth-of-type(2) .contacts__name {
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 
   .contacts__item:nth-of-type(3) {
@@ -189,7 +197,7 @@
   }
 
   .contacts__item:nth-of-type(3) .contacts__name {
-    margin-bottom: 26px;
+    margin-bottom: 23px;
   }
 
   .contacts__map {
@@ -211,5 +219,9 @@
   .contacts__map iframe {
     position: relative;
     height: 480px;
+  }
+
+  .contacts__value {
+    line-height: 30px;
   }
 }

@@ -68,7 +68,9 @@
     left: 0;
     width: 50px;
     height: 60px;
-    background: url("../img/logo-apple.svg") no-repeat 50% 0;
+    background-image: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
   }
 }
 
@@ -76,14 +78,18 @@
   top: 8px;
   left: 4px;
   height: 50px;
-  background: url("../img/logo-android.svg") no-repeat 50% 0;
+  background-image: url("../img/logo-android.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .download__link-pc::before {
   top: 12px;
   left: 10px;
   height: 50px;
-  background: url("../img/logo-microsoft.svg") no-repeat 50% 0;
+  background-image: url("../img/logo-microsoft.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 @media (min-width: $tablet-width) {

@@ -39,9 +39,9 @@
   &::before {
     content: "";
     position: absolute;
-    left: 59px;
-    bottom: -318px;
-    width: 165px;
+    left: 61px;
+    bottom: -317px;
+    width: 159px;
     height: 279px;
     background-image: url("../img/iphone-screen-mobile@1x.png");
     background-repeat: no-repeat;
@@ -136,15 +136,16 @@
 
   .specifications__list {
     display: flex;
-    justify-content: space-between;
-    width: 888px;
+    width: 960px;
     text-align: center;
     margin: 0 auto;
+    padding-left: 25px;
   }
 
   .specifications__item {
     position: relative;
     width: 248px;
+    margin-right: 72px;
 
     &::before {
       position: absolute;
@@ -186,6 +187,10 @@
       background-image: url("../img/iphone-screen-3-desktop@2x.png");
       background-size: contain;
     }
+  }
+
+  .specifications__item:nth-of-type(3) {
+    margin-right: 0;
   }
 
   .specifications__title {

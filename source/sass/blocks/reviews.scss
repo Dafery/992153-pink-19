@@ -124,6 +124,7 @@
   }
 
   .reviews__wrap {
+    position: relative;
     width: 780px;
     margin: 0 auto;
     padding-top: 88px;
@@ -132,42 +133,28 @@
   .reviews__button {
     position: absolute;
     display: block;
+    top: 133px;
+    left: -80px;
+    width: 23px;
+    height: 43px;
     border: none;
-    background: none;
+    background-color: transparent;
     outline: none;
-
-    &::before {
-      position: absolute;
-      content: "";
-      top: 46px;
-      left: -80px;
-      width: 22px;
-      height: 42px;
-      background-image: url("../img/icon-review-arrow-left.svg");
-      background-repeat: no-repeat;
-      background-position: 0 50%;
-      opacity: 0.3;
-    }
-  }
-
-  .reviews__button-right::before {
-    position: absolute;
-    content: "";
-    top: -212px;
-    left: 838px;
-    width: 22px;
-    height: 42px;
-    background-image: url("../img/icon-review-arrow-right.svg");
+    background-image: url("../img/icon-review-arrow-left.svg");
     background-repeat: no-repeat;
-    background-position: 0 50%;
     opacity: 0.3;
   }
 
-  .reviews__button:hover::before {
+  .reviews__button--right {
+    left: 838px;
+    background-image: url("../img/icon-review-arrow-right.svg");
+  }
+
+  .reviews__button:hover {
     opacity: 0.6;
   }
 
-  .reviews__button:active::before {
+  .reviews__button:active {
     opacity: 0.1;
   }
 

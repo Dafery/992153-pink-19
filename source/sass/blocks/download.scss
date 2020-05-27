@@ -1,6 +1,7 @@
 .download {
   padding-top: 28px;
   padding-bottom: 17px;
+  margin-bottom: 37px;
 }
 
 .download__wrap {
@@ -95,8 +96,8 @@
 @media (min-width: $tablet-width) {
   .download {
     position: relative;
-    margin-top: -380px;
-    margin-bottom: 76px;
+    margin-top: -385px;
+    margin-bottom: 120px;
     margin-left: -320px;
     padding-top: 30px;
   }
@@ -119,7 +120,7 @@
 @media (min-width: $desktop-width) {
   .download {
     margin-top: -404px;
-    margin-bottom: 122px;
+    margin-bottom: 185px;
     margin-left: -640px;
     padding: 0;
   }

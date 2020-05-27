@@ -68,6 +68,8 @@
   text-transform: uppercase;
   margin-bottom: 42px;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form__submit {
@@ -127,13 +129,13 @@
 
 .form__input {
   width: 255px;
-  min-height: 57px;
   font-size: 18px;
-  line-height: 30px;
   color: $color-text;
   border: 2px solid #e5e5e5;
   border-radius: 2px;
+  padding-top: 19px;
   padding-right: 0;
+  padding-bottom: 19px;
   padding-left: 21px;
   margin-bottom: 17px;
 
@@ -303,6 +305,7 @@
   .form__legend--modifier {
     display: block;
     margin-bottom: 37px;
+    margin-left: 120px;
   }
 
   .form__legend {
@@ -312,6 +315,7 @@
 
   .form__legend-os {
     margin-bottom: 48px;
+    margin-left: 65px;
     padding: 0 26px;
   }
 
@@ -358,7 +362,7 @@
 
   .form__input-emotions {
     width: 477px;
-    min-height: 173px;
+    min-height: 155px;
     margin-bottom: 34px;
   }
 
@@ -402,6 +406,7 @@
 
   .form__legend-achievement {
     margin-bottom: 48px;
+    margin-left: 33px;
   }
 
   .form__item-achievement {
@@ -414,6 +419,7 @@
 
   .form__legend-emotions {
     margin-bottom: 37px;
+    margin-left: 127px;
   }
 
   .form__label-os::before,
@@ -468,6 +474,7 @@
 
   .form__legend-emotions {
     margin-bottom: 34px;
+    margin-left: 281px;
   }
 
   .form__fieldset {
@@ -495,12 +502,14 @@
 
     &--modifier {
       margin-bottom: 34px;
+      margin-left: 274px;
     }
   }
 
   .form__legend-os {
     padding: 0 19px;
     margin-bottom: 50px;
+    margin-left: -38px;
   }
 
   .form__fieldset-achievement {
@@ -583,5 +592,9 @@
 
   .form__input-os {
     margin-left: 3px;
+  }
+
+  .form__legend-achievement {
+    margin-left: 186px;
   }
 }

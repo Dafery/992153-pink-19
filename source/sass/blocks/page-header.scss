@@ -6,6 +6,10 @@
   background-size: cover;
   border-top: 1px solid hsla(0, 0, 0, 0);
 
+  &--modifier {
+    min-height: 237px;
+  }
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
   }
@@ -41,10 +45,6 @@
 .page-header {
   background-color: #1d2631;
   text-align: center;
-
-  &__background--modifier {
-    min-height: 237px;
-  }
 }
 
 .page-header__menu {
@@ -197,6 +197,7 @@
     &--modifier {
       min-height: 327px;
       background-position: 50% 28%;
+      margin-top: 110px;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -241,7 +242,7 @@
 
   .page-header__background-wrap {
     width: 660px;
-    margin-top: 207px;
+    margin-top: 205px;
 
     &::before {
       width: 660px;
@@ -297,11 +298,11 @@
 
     &--modifier {
       min-height: 393px;
+      margin-top: 0;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/bg-back-desktop@2x.jpg");
-      background-size: cover;
     }
   }
 

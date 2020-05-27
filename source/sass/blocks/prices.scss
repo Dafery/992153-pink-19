@@ -30,6 +30,7 @@
   table-layout: fixed;
   width: calc(280% - 320px);
   margin-left: calc(-100% + 62px);
+  overflow: hidden;
 }
 
 .prices__title {
@@ -39,7 +40,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  background-color: $color-text;
   border-right: 2px solid #e5e5e5;
   color: #ffffff;
   text-transform: uppercase;
@@ -55,12 +55,19 @@
   height: 55px;
   font-size: 14px;
   line-height: 30px;
-  background-color: #ffffff;
   color: $color-text;
   text-align: left;
   text-transform: uppercase;
   padding-left: 22px;
   border: 2px solid #e5e5e5;
+}
+
+.prices__row {
+  background-color: #ffffff;
+}
+
+.prices__row:nth-child(1) {
+  background-color: $color-text;
 }
 
 .prices__nav {
@@ -76,7 +83,7 @@
   border-top: none;
   border-right: none;
   border-left: none;
-  background-color: transparent;
+  visibility: hidden;
 }
 
 .prices__title:nth-of-type(1) {
